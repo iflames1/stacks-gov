@@ -1,10 +1,10 @@
-import Admin from "@/components/Admin";
+import About from "@/components/About";
 import React from "react";
 
 export default function page() {
   return (
     <div>
-      <Admin />
+      <About />
     </div>
   );
 }
