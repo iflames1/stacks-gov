@@ -4,11 +4,8 @@ import { CiMenuBurger } from "react-icons/ci";
 
 export default function Laptop({ setMobileMenuOpen, navigation }) {
   return (
-    <nav
-      className="flex items-center justify-between p-6 lg:px-8"
-      aria-label="Global"
-    >
-      <div className="flex lg:flex-1">
+    <nav className="flex items-center justify-between" aria-label="Global">
+      <div className="flex-1">
         <Link href="/" className="-m-1.5 p-1.5">
           <span className="sr-only">Profile Picture</span>
           <Image
@@ -43,9 +40,12 @@ export default function Laptop({ setMobileMenuOpen, navigation }) {
       </div>
       {/* change to connect*/}
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+        <Link
+          href="#"
+          className="text-sm font-semibold leading-6 text-gray-900"
+        >
           Log in <span aria-hidden="true">→</span>
-        </a>
+        </Link>
       </div>
     </nav>
   );
