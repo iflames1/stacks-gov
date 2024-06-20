@@ -4,13 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import Connect from "../Connect";
 import { CiMenuBurger } from "react-icons/ci";
-import { navigation } from "./Nav";
+import { navigations } from "./nav";
+import { usePathname } from "next/navigation";
 
 import Small from "./Small";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  let navigation;
+
+  const pathname = usePathname();
+  if (pathname === "/") {
+    navigation = navigations.default;
+  } else {
+    navigation = navigations.governance;
+  }
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -26,7 +35,9 @@ export default function Header() {
   }, [menuRef]);
 
   return (
-    <header className="flex justify-between items-center py-4 px-8 shadow-md font-bold w- fixed top-0 z-50 w-full bg-white">
+    <header
+      className={`flex justify-between items-center py-4 px-8 shadow-md font-bold w- fixed top-0 z-50 w-full bg-white`}
+    >
       <Link href="/">
         <Image
           alt="profile"
@@ -44,9 +55,9 @@ export default function Header() {
             </Link>
           ))}
         </div>
-        <Connect />
       </div>
-      <div ref={menuRef}>
+      <Connect className={"hidden lg:flex"} />
+      <div ref={menuRef} className="flex lg:hidden">
         <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
           <CiMenuBurger className="h-6 w-6" aria-hidden="true" />
         </button>
