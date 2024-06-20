@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="relative">
-      <div className="absolute w-full top-0 z-50">
+      <div className="absolute w-full top-0">
         <Laptop setMobileMenuOpen={setMobileMenuOpen} navigation={navigation} />
         <Mobile
           setMobileMenuOpen={setMobileMenuOpen}
