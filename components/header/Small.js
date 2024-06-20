@@ -4,6 +4,9 @@ import { AiOutlineClose } from "react-icons/ai";
 import Connect from "../Connect";
 
 export default function Small({ isOpen, setIsOpen, navigation }) {
+  const handleClose = () => {
+    setIsOpen(false);
+  };
   return (
     isOpen && (
       <div
@@ -12,7 +15,7 @@ export default function Small({ isOpen, setIsOpen, navigation }) {
       >
         <div className="">
           <div className="flex justify-between items-center">
-            <Link href="/">
+            <Link href="/" onClick={handleClose}>
               <Image
                 alt="profile"
                 src={"/dp.jpg"}
@@ -32,12 +35,17 @@ export default function Small({ isOpen, setIsOpen, navigation }) {
           <div className="my-16 ">
             <div className="flex flex-col justify-between gap-8">
               {navigation.map((item) => (
-                <Link key={item.name} href={item.href} className="">
+                <Link
+                  key={item.name}
+                  onClick={handleClose}
+                  href={item.href}
+                  className=""
+                >
                   {item.name}
                 </Link>
               ))}
             </div>
-            <Connect className="mt-8" />
+            <Connect onClick={handleClose} className="mt-8" />
           </div>
         </div>
       </div>

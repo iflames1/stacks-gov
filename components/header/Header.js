@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Connect from "../Connect";
@@ -10,6 +10,20 @@ import Small from "./Small";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
 
   return (
     <header className="flex justify-between items-center py-4 px-8 shadow-md font-bold w- fixed top-0 z-50 w-full bg-white">
@@ -32,10 +46,12 @@ export default function Header() {
         </div>
         <Connect />
       </div>
-      <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
-        <CiMenuBurger className="h-6 w-6" aria-hidden="true" />
-      </button>
-      <Small isOpen={isOpen} setIsOpen={setIsOpen} navigation={navigation} />
+      <div ref={menuRef}>
+        <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
+          <CiMenuBurger className="h-6 w-6" aria-hidden="true" />
+        </button>
+        <Small isOpen={isOpen} setIsOpen={setIsOpen} navigation={navigation} />
+      </div>
     </header>
   );
 }
