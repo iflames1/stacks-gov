@@ -1,10 +1,10 @@
-import Create from "@/components/Create";
+import CreateGovernance from "@/components/CreateGovernance";
 import React from "react";
 
 export default function page() {
   return (
     <div>
-      <Create />
+      <CreateGovernance />
     </div>
   );
 }

@@ -13,7 +13,7 @@ export default function Hero() {
       </div>
       <Link
         href={"create"}
-        className="bg-orange-500 py-2 px-4 rounded-lg text-white max-w-xs mx-auto"
+        className="bg-orange-500 hover:bg-orange-600 py-2 px-4 rounded-lg text-white max-w-xs mx-auto"
       >
         Create Governance Page
       </Link>

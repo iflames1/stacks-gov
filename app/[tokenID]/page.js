@@ -8,7 +8,7 @@ export default function page({ params }) {
     <div className="min-h-screen">
       <h1>Welcome to {params.tokenID} governance page</h1>
       <h1>Topics</h1>
-      <Topics path={params.tokenID} />
+      <Topics />
       <Blog />
       <Add path={"/propose"} />
     </div>
