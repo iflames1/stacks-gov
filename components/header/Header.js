@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Connect from "../Connect";
 import { CiMenuBurger } from "react-icons/ci";
-import { navigations } from "./nav";
+import { navigations } from "./Nav";
 import { usePathname } from "next/navigation";
 import Small from "./Small";
 
