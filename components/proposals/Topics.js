@@ -10,7 +10,8 @@ export default function Proposals({ route }) {
         {proposals.map((proposal) => (
           <li key={proposal.id} className="bg-white p-4 rounded-lg shadow-sm">
             <h2 className="text-xl font-bold mb-2">{proposal.title}</h2>
-            <p className="mb-2">{proposal.description}</p>
+            {/*<p className="mb-2">{proposal.description}</p>*/}
+            <p className="mb-2">Some description</p>
             {proposal.status === "Active" ? (
               <span className="inline-block bg-green-200 text-green-800 text-sm px-2 py-1 rounded">
                 {proposal.status}
@@ -21,7 +22,7 @@ export default function Proposals({ route }) {
               </span>
             )}
 
-            <Link href={`/${route}/vote/${proposal.id}`}>
+            <Link href={`/${route}/${proposal.id}`}>
               <p className="ml-4 text-blue-500 hover:underline">View</p>
             </Link>
           </li>
