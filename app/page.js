@@ -1,11 +1,11 @@
-import Home from "@/components/Home";
 import Hero from "@/components/Hero";
+import Roadmap from "@/components/Roadmap";
 
 export default function page() {
   return (
-    <main>
+    <main className="mb-8">
       <Hero />
-      <Home />
+      <Roadmap />
     </main>
   );
 }
