@@ -1,11 +1,11 @@
 import Link from "next/link";
 import { proposals } from "./Data";
 
-export default function Proposals({ route }) {
+export default function Proposals({ path }) {
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Proposals</h1>
-      {route}
+      {path}
       <ul className="space-y-4">
         {proposals.map((proposal) => (
           <li key={proposal.id} className="bg-white p-4 rounded-lg shadow-sm">
@@ -22,7 +22,7 @@ export default function Proposals({ route }) {
               </span>
             )}
 
-            <Link href={`/${route}/${proposal.id}`}>
+            <Link href={`/${path}/${proposal.id}`}>
               <p className="ml-4 text-blue-500 hover:underline">View</p>
             </Link>
           </li>

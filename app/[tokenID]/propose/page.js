@@ -1,4 +1,4 @@
-import Propose from "@/components/Propose";
+import Propose from "@/components/proposals/Propose";
 import React from "react";
 
 export default function page() {
