@@ -90,7 +90,7 @@ export default function Propose() {
         <div className="flex items-center justify-between">
           <button
             type="submit"
-            className="bg-green-400 hover:bg-[#00fa8e] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
           >
             Submit
           </button>
