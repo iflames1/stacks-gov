@@ -15,7 +15,8 @@ export default function Header() {
 
   const pathname = usePathname();
   const basePath = pathname.split("/")[1] ? `/${pathname.split("/")[1]}` : "/";
-  if (pathname === "/") {
+  const defaultPath = ["/", "/create"];
+  if (defaultPath.includes(pathname)) {
     navigation = navigations.default;
   } else {
     navigation = navigations.governance;
@@ -38,7 +39,7 @@ export default function Header() {
     <header
       className={`flex justify-between items-center py-4 px-8 shadow-md font-bold w- fixed top-0 z-50 w-full bg-white`}
     >
-      <Link href={basePath}>
+      <Link href={defaultPath.includes(pathname) ? "/" : basePath}>
         <Image
           alt="profile"
           src={"/dp.jpg"}
