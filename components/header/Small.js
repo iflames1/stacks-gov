@@ -3,7 +3,7 @@ import Image from "next/image";
 import { AiOutlineClose } from "react-icons/ai";
 import Connect from "../Connect";
 
-export default function Small({ isOpen, setIsOpen, navigation }) {
+export default function Small({ isOpen, setIsOpen, navigation, basePath }) {
   const handleClose = () => {
     setIsOpen(false);
   };
@@ -38,7 +38,7 @@ export default function Small({ isOpen, setIsOpen, navigation }) {
                 <Link
                   key={item.name}
                   onClick={handleClose}
-                  href={item.href}
+                  href={basePath + item.href}
                   className=""
                 >
                   {item.name}

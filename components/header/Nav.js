@@ -1,9 +1,7 @@
 export const navigations = {
   governance: [
-    { name: "Create", href: "create" },
-    { name: "Governance", href: "#" },
-    { name: "Marketplace", href: "#" },
-    { name: "Company", href: "#" },
+    { name: "Proposals", href: "/proposals" },
+    { name: "Vote", href: "/vote" },
   ],
   default: [
     { name: "Create", href: "create" },

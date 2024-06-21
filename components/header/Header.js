@@ -6,7 +6,6 @@ import Connect from "../Connect";
 import { CiMenuBurger } from "react-icons/ci";
 import { navigations } from "./nav";
 import { usePathname } from "next/navigation";
-
 import Small from "./Small";
 
 export default function Header() {
@@ -15,6 +14,7 @@ export default function Header() {
   let navigation;
 
   const pathname = usePathname();
+  const basePath = pathname.split("/")[1] ? `/${pathname.split("/")[1]}` : "/";
   if (pathname === "/") {
     navigation = navigations.default;
   } else {
@@ -50,7 +50,7 @@ export default function Header() {
       <div className="hidden lg:flex">
         <div className="flex items-center space-x-4">
           {navigation.map((item) => (
-            <Link key={item.name} href={item.href} className="">
+            <Link key={item.name} href={basePath + item.href} className="">
               {item.name}
             </Link>
           ))}
@@ -61,7 +61,12 @@ export default function Header() {
         <button className="flex lg:hidden" onClick={() => setIsOpen(true)}>
           <CiMenuBurger className="h-6 w-6" aria-hidden="true" />
         </button>
-        <Small isOpen={isOpen} setIsOpen={setIsOpen} navigation={navigation} />
+        <Small
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          navigation={navigation}
+          basePath={basePath}
+        />
       </div>
     </header>
   );
