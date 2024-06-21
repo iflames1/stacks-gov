@@ -15,7 +15,7 @@ export default function Small({ isOpen, setIsOpen, navigation, basePath }) {
       >
         <div className="">
           <div className="flex justify-between items-center">
-            <Link href="/" onClick={handleClose}>
+            <Link href={basePath} onClick={handleClose}>
               <Image
                 alt="profile"
                 src={"/dp.jpg"}

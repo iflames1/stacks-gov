@@ -38,7 +38,7 @@ export default function Header() {
     <header
       className={`flex justify-between items-center py-4 px-8 shadow-md font-bold w- fixed top-0 z-50 w-full bg-white`}
     >
-      <Link href="/">
+      <Link href={basePath}>
         <Image
           alt="profile"
           src={"/dp.jpg"}

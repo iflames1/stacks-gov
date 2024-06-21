@@ -7,7 +7,6 @@ export default function Create() {
   const [tokenName, setTokenName] = useState("");
   const hundleSubmit = (e) => {
     e.preventDefault();
-    console.log("submit");
     router.push(`/${tokenName}`);
   };
   return (
