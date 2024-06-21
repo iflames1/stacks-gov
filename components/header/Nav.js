@@ -1,6 +1,6 @@
 export const navigations = {
   governance: [
-    { name: "Proposals", href: "/proposals" },
+    { name: "Home", href: "/home" },
     { name: "Vote", href: "/vote" },
   ],
   default: [
