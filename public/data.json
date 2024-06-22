@@ -18,6 +18,11 @@
               "id": 2,
               "title": "Host Monthly Meetups",
               "description": "A proposal to organize monthly meetups for community bonding and growth."
+            },
+            {
+              "id": 3,
+              "title": "Host Monthly Meetups",
+              "description": "A proposal to organize monthly meetups for community bonding and growth."
             }
           ]
         },
@@ -27,12 +32,17 @@
           "description": "Strategies to enhance the use and value of our token.",
           "proposals": [
             {
-              "id": 3,
+              "id": 4,
               "title": "Introduce Staking",
               "description": "A proposal to introduce staking mechanisms for token holders."
             },
             {
-              "id": 4,
+              "id": 5,
+              "title": "Partnership with DeFi Platforms",
+              "description": "A proposal to partner with decentralized finance platforms to enhance token utility."
+            },
+            {
+              "id": 6,
               "title": "Partnership with DeFi Platforms",
               "description": "A proposal to partner with decentralized finance platforms to enhance token utility."
             }
@@ -44,12 +54,17 @@
           "description": "Proposals focused on improving and expanding the platform’s features.",
           "proposals": [
             {
-              "id": 5,
+              "id": 7,
               "title": "Launch Mobile App",
               "description": "A proposal to develop and launch a mobile app for better accessibility."
             },
             {
-              "id": 6,
+              "id": 8,
+              "title": "Improve User Interface",
+              "description": "A proposal to redesign the platform’s user interface for a better user experience."
+            },
+            {
+              "id": 9,
               "title": "Improve User Interface",
               "description": "A proposal to redesign the platform’s user interface for a better user experience."
             }
