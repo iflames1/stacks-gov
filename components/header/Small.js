@@ -38,7 +38,11 @@ export default function Small({ isOpen, setIsOpen, navigation, basePath }) {
                 <Link
                   key={item.name}
                   onClick={handleClose}
-                  href={basePath + item.href}
+                  href={
+                    item.href.startsWith("#")
+                      ? "/" + item.href
+                      : basePath + item.href
+                  }
                   className=""
                 >
                   {item.name}

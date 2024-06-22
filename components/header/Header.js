@@ -51,7 +51,15 @@ export default function Header() {
       <div className="hidden lg:flex">
         <div className="flex items-center space-x-4">
           {navigation.map((item) => (
-            <Link key={item.name} href={basePath + item.href} className="">
+            <Link
+              key={item.name}
+              href={
+                item.href.startsWith("#")
+                  ? "/" + item.href
+                  : basePath + item.href
+              }
+              className=""
+            >
               {item.name}
             </Link>
           ))}

@@ -4,9 +4,9 @@ export const navigations = {
     //{ name: "Vote", href: "/vote" },
   ],
   default: [
-    { name: "Create", href: "create" },
     { name: "Road Map", href: "#roadmap" },
-    { name: "FAQ", href: "#" },
-    { name: "About Us", href: "#" },
+    { name: "FAQ", href: "#faq" },
+    { name: "About Us", href: "#about_us" },
+    { name: "Create", href: "create" },
   ],
 };
