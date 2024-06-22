@@ -24,17 +24,16 @@ export default function Propose() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     router.push(basePath + "/1");
     console.log("Form Submitted:", form);
   };
 
   return (
-    <div className="max-w-lg mx-auto p-8">
-      <h2 className="text-2xl font-bold mb-4">Create a Proposal</h2>
+    <div className="max-w-lg mx-auto p-4 sm:p-8">
+      <h2 className="text-2xl font-bold mb-4 text-center">Create a Proposal</h2>
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-white shadow-md rounded px-4 sm:px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4">
           <label
