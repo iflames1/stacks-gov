@@ -1,11 +1,11 @@
-import ProposalsPage from "@/components/Proposals";
-import Add from "@/components/proposals/Add";
+import ProposalsPage from "@/components/proposals/Proposals";
+import Add from "@/components/Add";
 
 export default function page() {
   return (
     <div>
       <ProposalsPage />
-      <Add path={"/#propose"} />
+      <Add text={"Add Proposal"} path={"/#propose"} />
     </div>
   );
 }

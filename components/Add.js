@@ -3,7 +3,7 @@ import Link from "next/link";
 import { IoAdd } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 
-export default function Add({ path }) {
+export default function Add({ path, text }) {
   const pathname = usePathname();
   return (
     <Link
@@ -12,7 +12,7 @@ export default function Add({ path }) {
       aria-label="Add Proposal"
     >
       <span className="relative flex items-center justify-center py-2 px-4 text-white">
-        <p className="hidden sm:flex">Add Proposal</p>
+        <p className="hidden sm:flex">{text}</p>
         <IoAdd size={32} className="" />
       </span>
     </Link>
