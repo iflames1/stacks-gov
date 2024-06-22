@@ -31,6 +31,7 @@ export default function GovernancePage() {
       <h1 className="sm:text-3xl text-2xl font-bold mb-10 text-center">
         Welcome to {governancePage.pageName}
       </h1>
+      <h2 className="text-2xl font-bold mb-4">Topics</h2>
       {governancePage.topics.map((topic) => (
         <div
           key={topic.id}

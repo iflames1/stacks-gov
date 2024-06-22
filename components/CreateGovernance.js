@@ -21,7 +21,12 @@ export default function CreateGovernance() {
 
   return (
     <div className="max-w-lg mx-auto p-4 sm:p-8">
-      <h2 className="text-2xl font-bold mb-4">Create Governance Page</h2>
+      <h2 className="text-2xl text-center font-bold mb-4">
+        Create Governance Page
+        <span className="block text-sm text-gray-500 py-4">
+          Project is still under production lease Launch Demo Below
+        </span>
+      </h2>
       <form
         onSubmit={handleSubmit}
         className="bg-white shadow-md rounded px-4 sm:px-8 pt-6 pb-8 mb-4"

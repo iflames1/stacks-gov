@@ -4,7 +4,7 @@ export default function Roadmap() {
   return (
     <div id="roadmap">
       <h2 className="text-4xl font-bold text-center mb-8">What to expect</h2>
-      <ul className="flex sm:flex-row flex-col items-center flex-wrap justify-around gap-4 w-full">
+      <ul className="flex sm:flex-row flex-col items-center sm:items-baseline flex-wrap justify-around gap-4 w-full">
         <h2 className="text-2xl font-bold w-full text-center">
           Phase 1: Foundation
         </h2>
