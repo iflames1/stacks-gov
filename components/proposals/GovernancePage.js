@@ -69,7 +69,7 @@ export default function GovernancePage() {
   if (!governancePage) return <div>Governance page not found</div>;
 
   const handleOpenClick = (topicId) => {
-    router.push(`/proposals/${topicId}`);
+    router.push(`${pathname}/${topicId}`);
   };
 
   return (
