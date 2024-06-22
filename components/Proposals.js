@@ -22,8 +22,11 @@ export default function ProposalsPage() {
   if (!topic) return <div>Topic not found</div>;
 
   return (
-    <div className="max-w-4xl mx-auto p-8">
-      <h1 className="text-3xl font-bold mb-4">Proposals for {topic.topic}</h1>
+    <div className="max-w-4xl mx-auto sm:p-8">
+      <div className="mb-8 text-center flex flex-col gap-4">
+        <h1 className="sm:text-3xl text-2xl font-bold ">{topic.topic}</h1>
+        <p className="">{topic.description}</p>
+      </div>
       {topic.proposals.map((proposal) => (
         <div key={proposal.id} className="mb-4 p-4 border rounded shadow-md">
           <h2 className="text-xl font-bold">{proposal.title}</h2>
