@@ -13,20 +13,18 @@ export default function CreateGovernance() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (communityName.trim()) {
-      // Redirect to the governance page for the given community
       router.push(`/${communityName}`);
     } else {
-      // Handle error for empty community name
       alert("Community name is required");
     }
   };
 
   return (
-    <div className="max-w-lg mx-auto p-8">
+    <div className="max-w-lg mx-auto p-4 sm:p-8">
       <h2 className="text-2xl font-bold mb-4">Create Governance Page</h2>
       <form
         onSubmit={handleSubmit}
-        className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        className="bg-white shadow-md rounded px-4 sm:px-8 pt-6 pb-8 mb-4"
       >
         <div className="mb-4">
           <label
