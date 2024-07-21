@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} ${jost.variable}`}>
+      <body className={`${manrope.variable} ${jost.variable} bg-[#040404]`}>
         <Providers>{children}</Providers>
       </body>
     </html>
