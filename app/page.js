@@ -1,15 +1,9 @@
-import About from "@/components/About";
-import FAQ from "@/components/FAQ";
-import Hero from "@/components/Hero";
-import Roadmap from "@/components/Roadmap";
+import ThemeSwitch from "@/components/ThemeSwitch";
 
 export default function page() {
   return (
-    <main className="mb-8">
-      <Hero />
-      <Roadmap />
-      <FAQ />
-      <About />
+    <main className="mb-8 font-manrope">
+      <ThemeSwitch />
     </main>
   );
 }
