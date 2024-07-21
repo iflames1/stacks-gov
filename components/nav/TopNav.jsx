@@ -6,7 +6,7 @@ export default function TopNav() {
   const address = "SPF0V8KWBS70F0WDKTMY65B3G591NN52PTHHN51D";
   return (
     <div className="max-w-[100vw] px-8 flex border-b-[1px] border-b-[rgba(255,255,255,0.15)]">
-      <div className="w-[342px] flex items-center gap-8">
+      <div className="min-w-[342px] flex items-center gap-8">
         <Image src={"/images/logo.png"} alt="logo" width={54.6} height={42.7} />
         <p>STX-GOV</p>
       </div>

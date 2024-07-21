@@ -18,7 +18,7 @@ export default function SideNav() {
   }, []);
 
   return (
-    <div className="px-8 pt-8 min-h-[calc(100vh-100px)] flex flex-col items-center absolute left-0 top-full border-r-[1px] border-r-[rgba(255,255,255,0.15)]">
+    <div className="px-8 pt-6 min-h-[calc(100vh-100px)] flex flex-col items-center absolute left-0 top-full border-r-[1px] border-r-[rgba(255,255,255,0.15)]">
       <div className="flex flex-col gap-4 justify-center items-center">
         {daos &&
           daos.map((dao) => (

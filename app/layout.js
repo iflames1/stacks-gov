@@ -1,7 +1,7 @@
 import { Manrope, Jost } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
-import Layout from "@/components/nav/Layout";
+import Layout from "@/components/Layout";
 
 const manrope = Manrope({
   subsets: ["latin"],
