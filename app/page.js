@@ -1,10 +1,10 @@
-import SideNav from "@/components/nav/SideNav";
+import TopNav from "@/components/nav/TopNav";
 import ThemeSwitch from "@/components/ThemeSwitch";
 
 export default function page() {
   return (
     <main className="mb-8 font-manrope">
-      <SideNav />
+      <TopNav />
     </main>
   );
 }

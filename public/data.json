@@ -1,133 +1,17 @@
-{
-  "governancePage": [
-    {
-      "pageName": "demo",
-      "id": 1,
-      "topics": [
-        {
-          "id": 1,
-          "topic": "Community Growth",
-          "description": "Initiatives aimed at expanding and engaging the community.",
-          "proposals": [
-            {
-              "id": 1,
-              "title": "Increase Social Media Presence",
-              "description": "A proposal to enhance our social media strategies and engagement."
-            },
-            {
-              "id": 2,
-              "title": "Host Monthly Meetups",
-              "description": "A proposal to organize monthly meetups for community bonding and growth."
-            },
-            {
-              "id": 3,
-              "title": "Host Monthly Meetups",
-              "description": "A proposal to organize monthly meetups for community bonding and growth."
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "topic": "Token Utility",
-          "description": "Strategies to enhance the use and value of our token.",
-          "proposals": [
-            {
-              "id": 4,
-              "title": "Introduce Staking",
-              "description": "A proposal to introduce staking mechanisms for token holders."
-            },
-            {
-              "id": 5,
-              "title": "Partnership with DeFi Platforms",
-              "description": "A proposal to partner with decentralized finance platforms to enhance token utility."
-            },
-            {
-              "id": 6,
-              "title": "Partnership with DeFi Platforms",
-              "description": "A proposal to partner with decentralized finance platforms to enhance token utility."
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "topic": "Platform Development",
-          "description": "Proposals focused on improving and expanding the platform’s features.",
-          "proposals": [
-            {
-              "id": 7,
-              "title": "Launch Mobile App",
-              "description": "A proposal to develop and launch a mobile app for better accessibility."
-            },
-            {
-              "id": 8,
-              "title": "Improve User Interface",
-              "description": "A proposal to redesign the platform’s user interface for a better user experience."
-            },
-            {
-              "id": 9,
-              "title": "Improve User Interface",
-              "description": "A proposal to redesign the platform’s user interface for a better user experience."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "pageName": "demo1",
-      "id": 1,
-      "topics": [
-        {
-          "id": 1,
-          "topic": "Community Growth",
-          "description": "Initiatives aimed at expanding and engaging the community.",
-          "proposals": [
-            {
-              "id": 1,
-              "title": "Increase Social Media Presence",
-              "description": "A proposal to enhance our social media strategies and engagement."
-            },
-            {
-              "id": 2,
-              "title": "Host Monthly Meetups",
-              "description": "A proposal to organize monthly meetups for community bonding and growth."
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "topic": "Token Utility",
-          "description": "Strategies to enhance the use and value of our token.",
-          "proposals": [
-            {
-              "id": 3,
-              "title": "Introduce Staking",
-              "description": "A proposal to introduce staking mechanisms for token holders."
-            },
-            {
-              "id": 4,
-              "title": "Partnership with DeFi Platforms",
-              "description": "A proposal to partner with decentralized finance platforms to enhance token utility."
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "topic": "Platform Development",
-          "description": "Proposals focused on improving and expanding the platform’s features.",
-          "proposals": [
-            {
-              "id": 5,
-              "title": "Launch Mobile App",
-              "description": "A proposal to develop and launch a mobile app for better accessibility."
-            },
-            {
-              "id": 6,
-              "title": "Improve User Interface",
-              "description": "A proposal to redesign the platform’s user interface for a better user experience."
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id": 1,
+    "name": "DAO1",
+    "daoLogo": "1.png"
+  },
+  {
+    "id": 2,
+    "name": "DAO2",
+    "daoLogo": "2.png"
+  },
+  {
+    "id": 3,
+    "name": "DAO3",
+    "daoLogo": "3.png"
+  }
+]
