@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { FaPlus } from "react-icons/fa6";
 import ThemeSwitch from "../ThemeSwitch";
+import Link from "next/link";
 
 export default function SideNav({ className }) {
   const [daos, setDaos] = useState(null);
@@ -25,17 +26,18 @@ export default function SideNav({ className }) {
       <div className="flex flex-col gap-4 justify-center items-center">
         {daos &&
           daos.map((dao) => (
-            <div
+            <Link
+              href={`/dao/${dao.id}`}
               key={dao.id}
               className="p-[5px] border-[1px] border-[rgba(255,255,255,0.35)] rounded-lg"
             >
               <Image
-                src={`/images/sidenav/${dao.daoLogo}`}
+                src={`/images/sidenav/stacks-logo.png`}
                 alt={dao.name}
                 width={45}
                 height={45}
               />
-            </div>
+            </Link>
           ))}
       </div>
 
