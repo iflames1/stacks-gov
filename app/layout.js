@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning className="dark">
       <body
-        className={`${manrope.variable} ${jost.variable} dark:bg-[#040404]`}
+        className={`${manrope.variable} ${jost.variable} dark:bg-[#040404] max-w-[100vw]`}
       >
         <Providers>
           <Layout className="dark:bg-gradient-to-r from-[#0C0C0C] to-transparent dark:text-white">

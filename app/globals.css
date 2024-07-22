@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.stick-please {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  align-self: first baseline;
+  height: auto;
+  display: unset;
+  bottom: 32px;
+}

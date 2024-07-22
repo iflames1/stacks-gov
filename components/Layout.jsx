@@ -7,11 +7,11 @@ export default function Layout({ children, className }) {
     <div className="relative font-manrope">
       <TopNav />
       <div className="flex w-[100vw] min-h-[calc(100dvh-100px)] gap-0">
-        <div className="flex w-[25%] gap-0">
+        <div className="flex w-[24.5%] gap-0">
           <SideNav className="w-[32%]" />
           <Nav className="w-[68%]" />
         </div>
-        <div className={`w-[77%] ${className}`}>{children}</div>
+        <div className={`w-[75%] ${className}`}>{children}</div>
       </div>
     </div>
   );
