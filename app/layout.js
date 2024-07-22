@@ -2,6 +2,7 @@ import { Manrope, Jost } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
 import Layout from "@/components/Layout";
+import Nav from "@/components/nav/Nav";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -22,10 +23,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${manrope.variable} ${jost.variable} bg-[#040404]`}>
+    <html lang="en" suppressHydrationWarning className="dark">
+      <body
+        className={`${manrope.variable} ${jost.variable} dark:bg-[#040404]`}
+      >
         <Providers>
-          <Layout>{children}</Layout>
+          <Layout className="dark:bg-gradient-to-r from-[#0C0C0C] to-transparent dark:text-white">
+            {children}
+          </Layout>
         </Providers>
       </body>
     </html>
