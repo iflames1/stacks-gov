@@ -1,6 +1,6 @@
-export const fetchData = async () => {
+export const fetchData = async (URL = "/dao.json") => {
   try {
-    const response = await fetch("/dao.json");
+    const response = await fetch(URL);
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }

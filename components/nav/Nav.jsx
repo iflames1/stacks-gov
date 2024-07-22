@@ -29,7 +29,7 @@ export default function Nav({ className, children }) {
         </div>
       )}
       <div
-        className={`absolute top-0 left-full w-[calc(100vw-374px)] h-[calc(100vh-100px)] ${className}`}
+        className={`absolute top-0 left-full w-[calc(100vw-374px)] ${className}`}
       >
         {children}
       </div>
