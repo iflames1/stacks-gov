@@ -28,7 +28,7 @@ export default function SideNav({ className }) {
     >
       <div className="flex flex-col gap-4 justify-center items-center">
         {daos &&
-          daos.map((dao) => (
+          daos.slice(0, 3).map((dao) => (
             <Link href={`/${dao.username}/dashboard`} key={dao.username}>
               <div className="flex items-center gap-2">
                 <div
@@ -44,7 +44,7 @@ export default function SideNav({ className }) {
                   }`}
                 >
                   <Image
-                    src={`/images/sidenav/stacks-logo.png`}
+                    src={dao.image}
                     alt={dao.name}
                     width={45}
                     height={45}

@@ -1,17 +1,17 @@
 [
   {
-    "username": "Lisa-Dao",
-    "name": "DAO1",
-    "daoLogo": "1.png"
+    "username": "POMBOO",
+    "name": "POMBOO",
+    "image": "/images/dashboard/pomboo.png"
   },
   {
     "username": "Welsh",
-    "name": "DAO2",
-    "daoLogo": "2.png"
+    "name": "Welsh",
+    "image": "/images/dashboard/welsh.png"
   },
   {
-    "username": "Boardon",
-    "name": "DAO3",
-    "daoLogo": "3.png"
+    "username": "Stackswap",
+    "name": "Stackswap",
+    "image": "/images/dashboard/stackswap.png"
   }
 ]

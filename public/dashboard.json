@@ -2,41 +2,41 @@
   {
     "id": 1,
     "name": "Welsh",
-    "image": "/images/dashboard/1.png"
+    "image": "/images/dashboard/welsh.png"
   },
   {
     "id": 2,
     "name": "Stackswap",
-    "image": "/images/dashboard/2.png"
+    "image": "/images/dashboard/stackswap.png"
   },
   {
     "id": 3,
     "name": "NOTHING",
-    "image": "/images/dashboard/3.png"
+    "image": "/images/dashboard/nothing.png"
   },
   {
     "id": 4,
-    "name": "Leather",
-    "image": "/images/dashboard/4.png"
+    "name": "HASHIKO",
+    "image": "/images/dashboard/hashiko.png"
   },
   {
     "id": 5,
     "name": "BORDN",
-    "image": "/images/dashboard/5.png"
+    "image": "/images/dashboard/bordn.png"
   },
   {
     "id": 6,
     "name": "POMBOO",
-    "image": "/images/dashboard/6.png"
+    "image": "/images/dashboard/pomboo.png"
   },
   {
     "id": 7,
-    "name": "Unik",
-    "image": "/images/dashboard/7.png"
+    "name": "LEO",
+    "image": "/images/dashboard/leo.png"
   },
   {
     "id": 8,
-    "name": "MOJO",
-    "image": "/images/dashboard/8.png"
+    "name": "ROO",
+    "image": "/images/dashboard/roo.png"
   }
 ]
