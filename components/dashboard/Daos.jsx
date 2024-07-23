@@ -19,7 +19,7 @@ export default function Daos() {
   }, []);
 
   return (
-    <div className="text-[rgba(255,255,255,0.40)] text-xs font-normal grid xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-between gap-x-[2%] gap-y-8 w-full">
+    <div className="text-[rgba(255,255,255,0.40)] text-xs font-normal grid 2xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-between gap-x-[2%] gap-y-8 w-full">
       {daos &&
         daos.map((dao) => (
           <div
