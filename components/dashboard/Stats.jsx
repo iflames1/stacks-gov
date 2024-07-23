@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Stats() {
   return (
-    <div className="font-jost text-[rgba(255,255,255,0.50)] text-base font-normal flex justify-between items-center p-6 bg-[rgba(255,255,255,0.04)] rounded">
+    <div className="font-jost text-[rgba(255,255,255,0.50)] text-base font-normal hidden md:flex justify-between items-center p-6 bg-[rgba(255,255,255,0.04)] rounded">
       <div className="flex items-center gap-2">
         <div className="flex justify-center items-center p-3 rounded-full bg-[rgba(7,7,8,0.15)]">
           <Image

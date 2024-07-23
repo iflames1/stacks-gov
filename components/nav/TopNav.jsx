@@ -8,7 +8,7 @@ export default function TopNav() {
   return (
     <div className="w-[100vw] pr-[2%] flex border-b-[1px] border-b-[rgba(255,255,255,0.15)]">
       <div className="w-[25%] pl-[2%] flex justify-between">
-        <Link href={"/"} className="flex items-center gap-8">
+        <Link href={"/"} className="hidden sm:flex items-center gap-8">
           <Image
             src={"/images/logo.png"}
             alt="logo"
@@ -21,7 +21,7 @@ export default function TopNav() {
       </div>
 
       <div className="flex justify-between items-center w-[75%]">
-        <form className="hidden flex-shrink lg:flex items-center gap-6 w-full max-w-xl dark:bg-[rgba(255,255,255,0.03)] h-fit my-auto mx-[2%] py-[15px] px-4 rounded-sm">
+        <form className="hidden flex-shrink xl:flex items-center gap-6 w-full max-w-xl dark:bg-[rgba(255,255,255,0.03)] h-fit my-auto mx-[2%] py-[15px] px-4 rounded-sm">
           <FiSearch className="size-6 text-[rgba(255,255,255,0.5)]" />
           {/* i dont know what is wrong this background  */}
           <input
@@ -30,7 +30,7 @@ export default function TopNav() {
           />
         </form>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 ml-auto">
           <div className="p-3 dark:bg-[rgba(255,255,255,0.05)] rounded-full">
             <IoNotifications className="size-6 dark:text-[rgba(255,255,255,0.4)]" />
           </div>
