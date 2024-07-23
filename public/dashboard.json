@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Welsh",
+    "image": "/images/dashboard/welsh.png"
+  },
+  {
+    "id": 2,
+    "name": "Stackswap",
+    "image": "/images/dashboard/stackswap.png"
+  },
+  {
+    "id": 3,
+    "name": "NOTHING",
+    "image": "/images/dashboard/nothing.png"
+  },
+  {
+    "id": 4,
+    "name": "HASHIKO",
+    "image": "/images/dashboard/hashiko.png"
+  },
+  {
+    "id": 5,
+    "name": "BORDN",
+    "image": "/images/dashboard/bordn.png"
+  },
+  {
+    "id": 6,
+    "name": "POMBOO",
+    "image": "/images/dashboard/pomboo.png"
+  },
+  {
+    "id": 7,
+    "name": "LEO",
+    "image": "/images/dashboard/leo.png"
+  },
+  {
+    "id": 8,
+    "name": "ROO",
+    "image": "/images/dashboard/roo.png"
+  }
+]

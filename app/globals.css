@@ -2,17 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
+.stick-please {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  align-self: first baseline;
+  height: auto;
+  display: unset;
+  bottom: 32px;
 }
