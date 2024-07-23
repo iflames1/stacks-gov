@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
 
@@ -7,7 +8,7 @@ export default function TopNav() {
   return (
     <div className="w-[100vw] pr-[2%] flex border-b-[1px] border-b-[rgba(255,255,255,0.15)]">
       <div className="w-[25%] pl-[2%] flex justify-between">
-        <div className="flex items-center gap-8">
+        <Link href={"/"} className="flex items-center gap-8">
           <Image
             src={"/images/logo.png"}
             alt="logo"
@@ -15,7 +16,7 @@ export default function TopNav() {
             height={42.7}
           />
           <p className="dark:text-white">STX-GOV</p>
-        </div>
+        </Link>
         <div className="bg-[rgba(255,255,255,0.15)] w-[1px] h-[99px]"></div>
       </div>
 

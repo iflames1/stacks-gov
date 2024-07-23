@@ -27,7 +27,7 @@ export default function SideNav({ className }) {
         {daos &&
           daos.map((dao) => (
             <Link
-              href={`/dao/${dao.id}`}
+              href={`/${dao.id}/dashboard`}
               key={dao.id}
               className="p-[5px] border-[1px] border-[rgba(255,255,255,0.35)] rounded-lg"
             >
