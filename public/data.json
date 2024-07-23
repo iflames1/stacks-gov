@@ -1,16 +1,16 @@
 [
   {
-    "id": 1,
+    "username": "Lisa-Dao",
     "name": "DAO1",
     "daoLogo": "1.png"
   },
   {
-    "id": 2,
+    "username": "Welsh",
     "name": "DAO2",
     "daoLogo": "2.png"
   },
   {
-    "id": 3,
+    "username": "Boardon",
     "name": "DAO3",
     "daoLogo": "3.png"
   }

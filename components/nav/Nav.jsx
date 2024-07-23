@@ -12,26 +12,14 @@ export default function Nav({ className }) {
   const pathname = usePathname();
   const parts = pathname.split("/").filter(Boolean);
   const userName = parts[0];
-  const dashboard = parts[1];
-  console.log("userName", userName);
   const pathstr = "/" + userName;
   useEffect(() => {
     if (userName === undefined) {
       setPath("");
     } else setPath(pathstr);
   }, [pathstr, userName]);
-  console.log(path);
-  console.log(pathname);
 
   const navs = ["/", "/explore", "/delegates", "/activity"];
-  console.log(navs.includes(path));
-  console.log(`${path}/explore`);
-  console.log(
-    `${`${path}/` === pathname || ("/explore" === pathname && "HI")}`
-  );
-  console.log(pathname === `${path + "/dashboard"}`);
-  console.log(`${path + "/" + dashboard}/`);
-
   return (
     <div
       className={`${className} dark:text-[rgba(255,255,255,0.5)] pt-6 flex flex-col gap-4`}
