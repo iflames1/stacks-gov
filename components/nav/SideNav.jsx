@@ -12,6 +12,7 @@ export default function SideNav({ className }) {
   const pathname = usePathname();
   const parts = pathname.split("/").filter(Boolean);
   const username = parts[0];
+
   useEffect(() => {
     async function loadData() {
       const response = await fetchData();
@@ -24,7 +25,7 @@ export default function SideNav({ className }) {
 
   return (
     <div
-      className={`${className} pt-6 flex flex-col items-center border-r-[1px] border-r-[rgba(255,255,255,0.15)] relative`}
+      className={`${className} pt-6 flex flex-col items-center border-r-[1px] dark:border-r-[rgba(255,255,255,0.15)] border-r-gray-200 relative`}
     >
       <div className="flex flex-col gap-4 justify-center items-center">
         {daos &&
@@ -32,15 +33,15 @@ export default function SideNav({ className }) {
             <Link href={`/${dao.username}/dashboard`} key={dao.username}>
               <div className="flex items-center gap-2">
                 <div
-                  className={`size-4 bg-white rounded-full ${
+                  className={`size-4 bg-blue-500 dark:bg-white rounded-full ${
                     dao.username === username ? "block" : "hidden"
                   }`}
                 ></div>
                 <div
-                  className={`p-[5px] border-[1px]  rounded-lg ${
+                  className={`p-[5px] border-[1px] rounded-lg ${
                     dao.username === username
-                      ? "border-white"
-                      : "border-[rgba(255,255,255,0.35)]"
+                      ? "border-blue-500 dark:border-white"
+                      : "border-gray-300 dark:border-[rgba(255,255,255,0.35)]"
                   }`}
                 >
                   <Image
@@ -55,14 +56,14 @@ export default function SideNav({ className }) {
           ))}
       </div>
 
-      <div className="bg-[rgba(255,255,255,0.15)] w-[57px] h-[1px] my-6"></div>
+      <div className="bg-gray-200 dark:bg-[rgba(255,255,255,0.15)] w-[57px] h-[1px] my-6"></div>
 
-      <button className="size-[57px] flex items-center justify-center dark:bg-[rgba(255,255,255,0.06)] border-dashed border-[1px] border-[rgba(255,255,255,0.35)] rounded-lg">
-        <FaPlus className="size-6" />
+      <button className="size-[57px] flex items-center justify-center bg-gray-100 dark:bg-[rgba(255,255,255,0.06)] border-dashed border-[1px] border-gray-300 dark:border-[rgba(255,255,255,0.35)] rounded-lg">
+        <FaPlus className="size-6 text-gray-600 dark:text-white" />
       </button>
-      <div className="bg-[rgba(255,255,255,0.15)] w-[57px] h-[1px] my-6"></div>
+      <div className="bg-gray-200 dark:bg-[rgba(255,255,255,0.15)] w-[57px] h-[1px] my-6"></div>
 
-      <div className="sticky ">
+      <div className="sticky">
         <ThemeSwitch />
       </div>
     </div>
