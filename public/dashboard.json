@@ -1,42 +1,42 @@
 [
   {
     "id": 1,
-    "name": "Aave",
+    "name": "Welsh",
     "image": "/images/dashboard/1.png"
   },
   {
     "id": 2,
-    "name": "Sushi",
+    "name": "Stackswap",
     "image": "/images/dashboard/2.png"
   },
   {
     "id": 3,
-    "name": "Fei",
+    "name": "NOTHING",
     "image": "/images/dashboard/3.png"
   },
   {
     "id": 4,
-    "name": "Olumpus",
+    "name": "Leather",
     "image": "/images/dashboard/4.png"
   },
   {
     "id": 5,
-    "name": "Merit Circle",
+    "name": "BORDN",
     "image": "/images/dashboard/5.png"
   },
   {
     "id": 6,
-    "name": "Decentral...",
+    "name": "POMBOO",
     "image": "/images/dashboard/6.png"
   },
   {
     "id": 7,
-    "name": "Pancake",
+    "name": "Unik",
     "image": "/images/dashboard/7.png"
   },
   {
     "id": 8,
-    "name": "Pancake",
+    "name": "MOJO",
     "image": "/images/dashboard/8.png"
   }
 ]

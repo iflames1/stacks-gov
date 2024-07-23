@@ -12,7 +12,6 @@ export default function SideNav({ className }) {
   const pathname = usePathname();
   const parts = pathname.split("/").filter(Boolean);
   const username = parts[0];
-  console.log(pathname, username);
   useEffect(() => {
     async function loadData() {
       const response = await fetchData();

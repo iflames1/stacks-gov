@@ -21,12 +21,12 @@ export default function TopNav() {
       </div>
 
       <div className="flex justify-between items-center w-[75%]">
-        <form className="flex items-center gap-6 w-full max-w-xl dark:bg-[rgba(255,255,255,0.03)] h-fit my-auto mx-[2%] py-[15px] px-4 rounded-sm">
+        <form className="hidden flex-shrink lg:flex items-center gap-6 w-full max-w-xl dark:bg-[rgba(255,255,255,0.03)] h-fit my-auto mx-[2%] py-[15px] px-4 rounded-sm">
           <FiSearch className="size-6 text-[rgba(255,255,255,0.5)]" />
           {/* i dont know what is wrong this background  */}
           <input
             placeholder="Search DAOS..."
-            className="placeholder:text-[rgba(255,255,255,0.3)] outline-none w-full appearance-none"
+            className="placeholder:text-[rgba(255,255,255,0.3)] outline-none w-full flex-shrink appearance-none"
           />
         </form>
 
@@ -35,13 +35,13 @@ export default function TopNav() {
             <IoNotifications className="size-6 dark:text-[rgba(255,255,255,0.4)]" />
           </div>
 
-          <div className="flex items-center gap-[10px] py-3 px-4 dark:bg-[rgba(255,255,255,0.05)] rounded-sm">
+          <div className="flex items-center w-fit gap-[10px] py-3 px-4 dark:bg-[rgba(255,255,255,0.05)] rounded-sm">
             <Image
               src={"/images/wallet-icon.png"}
               alt="avater"
               width={23}
               height={23}
-              className="rounded-full"
+              className="rounded-full size-[23px]"
             />
             <p className="text-base font-normal">
               {`${address.slice(0, 7)}...${address.slice(-3)}`}
