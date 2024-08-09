@@ -8,9 +8,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        // 👇 Add CSS variables
-        manrope: ["var(--font-manrope)"],
-        jost: ["var(--font-jost)"],
+        manrope: ["Manrope", "sans-serif"],
+        jost: ["Jost", "sans-serif"],
+      },
+      colors: {
+        black: "#040404",
+        white: "#fff",
       },
     },
   },

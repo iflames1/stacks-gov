@@ -14,7 +14,7 @@ export default function Stats() {
         </div>
         <div>
           <p>DAOs Joined</p>
-          <p className="text-xl font-bold font-manrope text-blue-600 dark:text-[#246AEE]">
+          <p className="text-xl font-bold text-blue-600 dark:text-[#246AEE]">
             64
           </p>
         </div>
@@ -31,7 +31,7 @@ export default function Stats() {
         </div>
         <div>
           <p>Total Votes</p>
-          <p className="text-xl font-bold font-manrope text-green-600 dark:text-[#00C9A9]">
+          <p className="text-xl font-bold text-green-600 dark:text-[#00C9A9]">
             127
           </p>
         </div>
@@ -48,9 +48,7 @@ export default function Stats() {
         </div>
         <div>
           <p>Total Proposals</p>
-          <p className="text-xl font-bold font-manrope text-gray-800 dark:text-[#FFF]">
-            1K
-          </p>
+          <p className="text-xl font-bold text-gray-800 dark:text-[#FFF]">1K</p>
         </div>
       </div>
     </div>
