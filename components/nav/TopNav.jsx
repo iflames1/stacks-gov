@@ -1,13 +1,17 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { IoNotifications } from "react-icons/io5";
-import { IoMdMenu } from "react-icons/io";
 import Search from "./Search";
 import Wallet from "../Wallet";
+import MobileNav from "./MobileNav";
+import { useState } from "react";
 
 export default function TopNav() {
+  const [showMobileNav, setShowMobileNav] = useState(false);
+
   return (
-    <div className="w-[100vw] pr-[2%] flex justify-between border-b-[1px] dark:border-b-[rgba(255,255,255,0.15)] border-b-gray-200">
+    <div className="w-[100vw] pr-[2%] flex justify-between border-b-[1px] dark:border-b-[rgba(255,255,255,0.15)] border-b-gray-200 relative">
       <div className="lg:w-[25%] w-full pl-[2%] flex justify-between">
         <Link href={"/"} className="flex items-center gap-8 py-2">
           <Image
@@ -32,9 +36,10 @@ export default function TopNav() {
           <Wallet />
         </div>
 
-        <div className="block lg:hidden">
-          <IoMdMenu className="size-6" />
-        </div>
+        <MobileNav
+          showMobileNav={showMobileNav}
+          setShowMobileNav={setShowMobileNav}
+        />
       </div>
     </div>
   );
