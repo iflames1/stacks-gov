@@ -23,19 +23,19 @@ export default function Nav({ className }) {
   const navs = ["/", "/explore", "/delegates", "/activity"];
   return (
     <div
-      className={`${className} text-gray-600 dark:text-[rgba(255,255,255,0.5)] pt-6 flex flex-col gap-4`}
+      className={`${className} text-gray-600 dark:text-white/50 pt-6 flex flex-col gap-4`}
     >
       <Link
         href={`${navs.includes(path) ? "/" : path + "/dashboard"}`}
         className={`flex items-center gap-4 py-4 pl-8 ${
           (pathname === `${path + "/dashboard"}` || pathname === "/") &&
-          "bg-blue-50 dark:bg-[rgba(0,201,169,0.05)] border-r-[2px] border-r-blue-500 dark:border-r-[#00C9A9]"
+          "bg-blue-50 dark:bg-teal-500/5 border-r-[2px] border-r-blue-500 dark:border-r-teal-500"
         }`}
       >
         <AiFillHome
           className={`size-6 ${
             pathname === `${path + "/dashboard"}` || pathname === "/"
-              ? "text-blue-500 dark:text-[rgba(36,106,238,1)]"
+              ? "text-blue-500 dark:text-blue-600"
               : ""
           }`}
         />
@@ -53,13 +53,13 @@ export default function Nav({ className }) {
         href={`${navs.includes(path) ? "/explore" : path + "/explore"}`}
         className={`flex items-center gap-4 py-4 pl-8 ${
           (pathname === `${path}/explore` || pathname === "/explore") &&
-          "bg-blue-50 dark:bg-[rgba(0,201,169,0.05)] border-r-[2px] border-r-blue-500 dark:border-r-[#00C9A9]"
+          "bg-blue-50 dark:bg-teal-500/5 border-r-[2px] border-r-blue-500 dark:border-r-teal-500"
         }`}
       >
         <ImTarget
           className={`size-6 ${
             pathname === `${path}/explore` || pathname === "/explore"
-              ? "text-blue-500 dark:text-[rgba(36,106,238,1)]"
+              ? "text-blue-500 dark:text-blue-600"
               : ""
           }`}
         />
@@ -77,13 +77,13 @@ export default function Nav({ className }) {
         href={`${navs.includes(path) ? "/delegates" : path + "/delegates"}`}
         className={`flex items-center gap-4 py-4 pl-8 ${
           (pathname === `${path}/delegates` || pathname === "/delegates") &&
-          "bg-blue-50 dark:bg-[rgba(0,201,169,0.05)] border-r-[2px] border-r-blue-500 dark:border-r-[#00C9A9]"
+          "bg-blue-50 dark:bg-teal-500/5 border-r-[2px] border-r-blue-500 dark:border-r-teal-500"
         }`}
       >
         <BsPeopleFill
           className={`size-6 ${
             pathname === `${path}/delegates` || pathname === "/delegates"
-              ? "text-blue-500 dark:text-[rgba(36,106,238,1)]"
+              ? "text-blue-500 dark:text-blue-600"
               : ""
           }`}
         />
@@ -101,13 +101,13 @@ export default function Nav({ className }) {
         href={`${navs.includes(path) ? "/activity" : path + "/activity"}`}
         className={`flex items-center gap-4 py-4 pl-8 ${
           (pathname === `${path}/activity` || pathname === "/activity") &&
-          "bg-blue-50 dark:bg-[rgba(0,201,169,0.05)] border-r-[2px] border-r-blue-500 dark:border-r-[#00C9A9]"
+          "bg-blue-50 dark:bg-teal-500/5 border-r-[2px] border-r-blue-500 dark:border-r-teal-500"
         }`}
       >
         <RiPlayCircleFill
           className={`size-6 ${
             pathname === `${path}/activity` || pathname === "/activity"
-              ? "text-blue-500 dark:text-[rgba(36,106,238,1)]"
+              ? "text-blue-500 dark:text-blue-600"
               : ""
           }`}
         />

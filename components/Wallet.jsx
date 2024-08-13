@@ -1,5 +1,5 @@
 "use client";
-import { useWallet } from "@/app/utils/wallet";
+import { useWallet } from "@/utils/wallet";
 import Image from "next/image";
 
 export default function Wallet() {
@@ -16,7 +16,7 @@ export default function Wallet() {
   return (
     <button
       onClick={() => handleConnection()}
-      className="flex items-center w-fit gap-[10px] py-3 px-4 dark:bg-[rgba(255,255,255,0.05)] bg-gray-100 rounded-sm"
+      className="flex items-center w-fit gap-[10px] py-3 px-4 dark:bg-white/5 bg-gray-100 rounded-sm"
     >
       <Image
         src={"/images/wallet-icon.png"}
