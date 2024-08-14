@@ -1,17 +1,50 @@
 [
   {
-    "username": "POMBOO",
-    "name": "POMBOO",
-    "image": "/images/dashboard/pomboo.png"
-  },
-  {
+    "id": 1,
     "username": "Welsh",
-    "name": "Welsh",
-    "image": "/images/dashboard/welsh.png"
+    "image": "/images/dashboard/welsh.png",
+    "joined": true
   },
   {
+    "id": 2,
     "username": "Stackswap",
-    "name": "Stackswap",
-    "image": "/images/dashboard/stackswap.png"
+    "image": "/images/dashboard/stackswap.png",
+    "joined": true
+  },
+  {
+    "id": 3,
+    "username": "NOTHING",
+    "image": "/images/dashboard/nothing.png",
+    "joined": false
+  },
+  {
+    "id": 4,
+    "username": "HASHIKO",
+    "image": "/images/dashboard/hashiko.png",
+    "joined": false
+  },
+  {
+    "id": 5,
+    "username": "BORDN",
+    "image": "/images/dashboard/bordn.png",
+    "joined": false
+  },
+  {
+    "id": 6,
+    "username": "POMBOO",
+    "image": "/images/dashboard/pomboo.png",
+    "joined": true
+  },
+  {
+    "id": 7,
+    "username": "LEO",
+    "image": "/images/dashboard/leo.png",
+    "joined": false
+  },
+  {
+    "id": 8,
+    "username": "ROO",
+    "image": "/images/dashboard/roo.png",
+    "joined": false
   }
 ]

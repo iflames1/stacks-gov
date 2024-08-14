@@ -53,7 +53,6 @@ export default function Nav({ className }) {
       try {
         const response = await axios.get(endpoint);
         const userNames = response.data.map((item) => item.username);
-        console.log(userNames);
         setUserNames(userNames);
 
         return userNames;
@@ -70,10 +69,10 @@ export default function Nav({ className }) {
     >
       <Link
         href={direct("/")}
-        className={`flex items-center gap-4 py-4 pl-8 ${active("/").container}`}
+        className={`flex items-center gap-4 py-4 pl-8 ${active("").container}`}
       >
-        <AiFillHome className={`size-6 ${active("/").icon}`} />
-        <p className={`${active("/").text}`}>Dashboard</p>
+        <AiFillHome className={`size-6 ${active("").icon}`} />
+        <p className={`${active("").text}`}>Dashboard</p>
       </Link>
 
       <Link
