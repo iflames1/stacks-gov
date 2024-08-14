@@ -11,6 +11,7 @@
   "dependencies": {
     "@headlessui/react": "^2.0.4",
     "@stacks/connect": "^7.7.1",
+    "axios": "^1.7.4",
     "next": "14.2.4",
     "next-themes": "^0.3.0",
     "react": "^18",

@@ -30,7 +30,7 @@ export default function SideNav({ className }) {
       <div className="flex flex-col gap-4 justify-center items-center">
         {daos &&
           daos.slice(0, 3).map((dao) => (
-            <Link href={`/${dao.username}/dashboard`} key={dao.username}>
+            <Link href={`/${dao.username}/`} key={dao.username}>
               <div className="flex items-center gap-2">
                 <div
                   className={`size-4 bg-blue-500 dark:bg-white rounded-full ${
