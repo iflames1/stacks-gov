@@ -3,7 +3,7 @@ import Providers from "./providers";
 import Layout from "@/components/Layout";
 
 export const metadata = {
-  title: "Stack Governance App",
+  title: "Stacks Governance App",
   description: "Your Decentralized Governance Platform",
 };
 

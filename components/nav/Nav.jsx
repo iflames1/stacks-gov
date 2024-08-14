@@ -11,7 +11,7 @@ import axios from "axios";
 export default function Nav({ className }) {
   const pathname = usePathname();
   const parts = pathname.split("/").filter(Boolean);
-  const userName = parts.length >= 1 ? parts[0] : "";
+  const userName = parts.length >= 1 ? parts[0] : "/";
 
   const nav =
     parts.length >= 1
@@ -53,7 +53,7 @@ export default function Nav({ className }) {
       try {
         const response = await axios.get(endpoint);
         const userNames = response.data.map((item) => item.username);
-        setUserNames(userNames);
+        setUserNames(userNames.map((name) => name.toLowerCase()));
 
         return userNames;
       } catch (error) {
@@ -69,10 +69,10 @@ export default function Nav({ className }) {
     >
       <Link
         href={direct("/")}
-        className={`flex items-center gap-4 py-4 pl-8 ${active("").container}`}
+        className={`flex items-center gap-4 py-4 pl-8 ${active("/").container}`}
       >
-        <AiFillHome className={`size-6 ${active("").icon}`} />
-        <p className={`${active("").text}`}>Dashboard</p>
+        <AiFillHome className={`size-6 ${active("/").icon}`} />
+        <p className={`${active("/").text}`}>Dashboard</p>
       </Link>
 
       <Link
