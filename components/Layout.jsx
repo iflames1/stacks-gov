@@ -4,7 +4,7 @@ import TopNav from "./nav/TopNav";
 
 export default function Layout({ children, className }) {
   return (
-    <div className="relative font-manrope">
+    <div className="relative">
       <TopNav />
       <div className="flex w-[100vw] h-[100vh] max-h-[calc(100vh-100px)] gap-0 overflow-y-hidden">
         <div className="hidden lg:flex w-[24.5%]  gap-0">

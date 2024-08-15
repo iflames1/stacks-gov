@@ -1,17 +1,354 @@
 [
   {
-    "username": "POMBOO",
-    "name": "POMBOO",
-    "image": "/images/dashboard/pomboo.png"
-  },
-  {
+    "id": 1,
     "username": "Welsh",
-    "name": "Welsh",
-    "image": "/images/dashboard/welsh.png"
+    "image": "/images/dashboard/welsh.png",
+    "joined": true,
+    "proposals": [
+      {
+        "author": "welsh.btc",
+        "author_dp": "/images/dashboard/welsh.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "welsh.btc",
+        "author_dp": "/images/dashboard/welsh.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "welsh.btc",
+        "author_dp": "/images/dashboard/welsh.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "welsh.btc",
+        "author_dp": "/images/dashboard/welsh.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
   },
   {
+    "id": 2,
     "username": "Stackswap",
-    "name": "Stackswap",
-    "image": "/images/dashboard/stackswap.png"
+    "image": "/images/dashboard/stackswap.png",
+    "joined": true,
+    "proposals": [
+      {
+        "author": "stackswap.btc",
+        "author_dp": "/images/dashboard/stackswap.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "stackswap.btc",
+        "author_dp": "/images/dashboard/stackswap.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "stackswap.btc",
+        "author_dp": "/images/dashboard/stackswap.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "stackswap.btc",
+        "author_dp": "/images/dashboard/stackswap.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "username": "NOTHING",
+    "image": "/images/dashboard/nothing.png",
+    "joined": false,
+    "proposals": [
+      {
+        "author": "nothing.btc",
+        "author_dp": "/images/dashboard/nothing.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "nothing.btc",
+        "author_dp": "/images/dashboard/nothing.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "nothing.btc",
+        "author_dp": "/images/dashboard/nothing.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "nothing.btc",
+        "author_dp": "/images/dashboard/nothing.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "username": "UNIK",
+    "image": "/images/dashboard/dp.jpg",
+    "joined": false,
+    "proposals": [
+      {
+        "author": "unik.btc",
+        "author_dp": "/images/dashboard/dp.jpg",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "unik.btc",
+        "author_dp": "/images/dashboard/dp.jpg",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "unik.btc",
+        "author_dp": "/images/dashboard/dp.jpg",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "unik.btc",
+        "author_dp": "/images/dashboard/dp.jpg",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "username": "BORDN",
+    "image": "/images/dashboard/bordn.png",
+    "joined": false,
+    "proposals": [
+      {
+        "author": "bordn.btc",
+        "author_dp": "/images/dashboard/bordn.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "bordn.btc",
+        "author_dp": "/images/dashboard/bordn.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "bordn.btc",
+        "author_dp": "/images/dashboard/bordn.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "bordn.btc",
+        "author_dp": "/images/dashboard/bordn.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "username": "POMBOO",
+    "image": "/images/dashboard/pomboo.png",
+    "joined": true,
+    "proposals": [
+      {
+        "author": "pomboo.btc",
+        "author_dp": "/images/dashboard/pomboo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "pomboo.btc",
+        "author_dp": "/images/dashboard/pomboo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "pomboo.btc",
+        "author_dp": "/images/dashboard/pomboo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "pomboo.btc",
+        "author_dp": "/images/dashboard/pomboo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "username": "LEO",
+    "image": "/images/dashboard/leo.png",
+    "joined": false,
+    "proposals": [
+      {
+        "author": "leo.btc",
+        "author_dp": "/images/dashboard/leo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "leo.btc",
+        "author_dp": "/images/dashboard/leo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "leo.btc",
+        "author_dp": "/images/dashboard/leo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "leo.btc",
+        "author_dp": "/images/dashboard/leo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "username": "ROO",
+    "image": "/images/dashboard/roo.png",
+    "joined": false,
+    "proposals": [
+      {
+        "author": "roo.btc",
+        "author_dp": "/images/dashboard/roo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "roo.btc",
+        "author_dp": "/images/dashboard/roo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "roo.btc",
+        "author_dp": "/images/dashboard/roo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      },
+      {
+        "author": "roo.btc",
+        "author_dp": "/images/dashboard/roo.png",
+        "votes": { "upvote": 12, "downvote": 6 },
+        "active": true,
+        "daysleft": 2,
+        "topic": "Lorem ipsum dolor sit amet lorem amet sit do",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+      }
+    ]
   }
 ]

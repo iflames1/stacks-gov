@@ -1,9 +1,9 @@
-import Dashboard from "@/components/dashboard/Dashboard";
+import DaoHome from "@/components/daohome/DaoHome";
 
 export default function page() {
   return (
-    <div className="font-manrope">
-      <Dashboard />
+    <div className="">
+      <DaoHome />
     </div>
   );
 }
