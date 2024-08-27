@@ -18,6 +18,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        manrope: ["Manrope", "sans-serif"],
+        jost: ["Jost", "sans-serif"],
+      },
       colors: {
         "accent-blue": "hsl(var(--accent-blue))",
         white: "hsl(var(--white))",
