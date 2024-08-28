@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
-import { Button } from "../ui/button";
 
 export default function Top() {
   return (
