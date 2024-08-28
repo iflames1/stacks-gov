@@ -7,7 +7,7 @@ export default function Top() {
   return (
     <div className="w-full border-b border-white/15">
       <div className="flex items-center">
-        <div className="w-[23%] border-r border-white/15">
+        <div className="w-[23vw] border-r border-white/15">
           <Link href={"/"} className="flex items-center gap-8 py-8 pl-8">
             <Image
               src={"/images/logo.png"}
