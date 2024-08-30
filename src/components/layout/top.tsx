@@ -7,8 +7,8 @@ export default function Top() {
   return (
     <div className="w-full border-b border-white/15">
       <div className="flex items-center">
-        <div className="w-[23vw] border-r border-white/15">
-          <Link href={"/"} className="flex items-center gap-8 py-8 pl-8">
+        <div className="min-w-[23vw] border-r border-white/15">
+          <Link href={"/"} className="flex items-center gap-8 py-8 pl-8 w-full">
             <Image
               src={"/images/logo.png"}
               alt="stacks gov logo"
@@ -18,7 +18,7 @@ export default function Top() {
             <span className="text-white text-xl">Stacks Gov</span>
           </Link>
         </div>
-        <div className="px-8 flex items-center justify-between w-full">
+        <div className="px-[2.7%] flex items-center justify-between w-full">
           <div className="flex items-center gap-6 pl-4 py-4 bg-white/[0.03] border border-white/[0.02] rounded-sm w-1/2">
             <FiSearch className="size-6 text-white/50" />
             <input
