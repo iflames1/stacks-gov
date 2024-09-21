@@ -26,9 +26,12 @@ export default function Nav({ path, title }: NavProps) {
   return (
     <Link
       href={path}
-      className={cn("flex items-center gap-4 py-4 pl-[14%]", {
-        "bg-teal/5 border-r-2 border-teal": pathname === path,
-      })}
+      className={cn(
+        "flex items-center gap-4 py-4 pl-[14%] lg:pr-0 pr-[14%] w-full",
+        {
+          "bg-teal/5 border-r-2 border-teal": pathname === path,
+        }
+      )}
     >
       <Icon
         className={cn("size-6 text-white/40", {
