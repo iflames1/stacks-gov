@@ -27,7 +27,7 @@ export default function SideNav() {
     fetchJoinedDao();
   });
   return (
-    <div className="flex flex-col gap-4 justify-center items-center">
+    <div className="flex flex-col lg:gap-4 gap-2 px-2 justify-center items-center">
       {joinedDAO.map((dao) => (
         <Link
           key={dao.username}
@@ -36,17 +36,25 @@ export default function SideNav() {
         >
           <div
             className={`size-4 bg-white rounded-full ${
-              dao.username.toLowerCase() === username ? "block" : "hidden"
+              dao.username.toLowerCase() === username
+                ? "lg:block hidden"
+                : "hidden"
             }`}
           ></div>
           <div
-            className={`p-2 border rounded-lg ${
+            className={`lg:p-2 p-1 border rounded-lg ${
               dao.username.toLowerCase() === username
-                ? "border-white/35"
+                ? "border-white"
                 : "border-white/35"
             }`}
           >
-            <Image src={dao.image} alt={dao.username} width={45} height={45} />
+            <Image
+              src={dao.image}
+              alt={dao.username}
+              width={45}
+              height={45}
+              className=""
+            />
           </div>
         </Link>
       ))}
