@@ -1,63 +1,44 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
-import { FiSearch } from "react-icons/fi";
-import { useState } from "react";
+import { FiMenu } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
-import { AiFillHome } from "react-icons/ai";
-import Nav from "../home/nav";
+import Button from "../common/button";
+import { cn } from "@/lib/utils";
+import Link from "next/link";
+import MobileNavigation from "../home/mobile-navigation";
 
-export default function MobileTop() {
-  const [mute, setMute] = useState("false");
-  const [route, setRoute] = useState("dashboard");
-
+export default function MobileTop({ className }: { className?: string }) {
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger>
-        <Button variant="outline">Menu</Button>
+      <DropdownMenuTrigger className={cn("outline-none", className)}>
+        <Button className="px-4 py-3">
+          <FiMenu />
+        </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
-        <DropdownMenuRadioGroup value="route" onValueChange={setRoute}>
-          <DropdownMenuRadioItem value="dashboard" asChild>
-            <Nav title="Dashboard" path="/" />
-          </DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="explore" asChild>
-            <Nav title="Explore" path="/explore" />
-          </DropdownMenuRadioItem>{" "}
-          <DropdownMenuRadioItem value="explore" asChild>
-            <Nav title="Activity" path="/activity" />
-          </DropdownMenuRadioItem>
-        </DropdownMenuRadioGroup>
-        <DropdownMenuSeparator />
+      <DropdownMenuContent className={"w-60"}>
+        <MobileNavigation />
+
+        <DropdownMenuSeparator className="my-4" />
+
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <FiSearch className="size-6 text-white/50" />
-            <span>Search</span>
+            <Button className={cn("justify-start px-[14%] py-4 w-full")}>
+              <IoNotifications className="size-6 text-white/[0.4]" />
+              <span>Mute</span>
+            </Button>
           </DropdownMenuItem>
         </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuRadioGroup value={mute} onValueChange={setMute}>
-          <DropdownMenuRadioItem value={"true"}>
-            <IoNotifications className="size-6 text-white/[0.4]" />
-            <span>Mute</span>
-          </DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value={"false"}>
-            <IoNotifications className="size-6 text-white/[0.4]" />
-            <span>Unmute</span>
-          </DropdownMenuRadioItem>
-        </DropdownMenuRadioGroup>
+
         <DropdownMenuGroup>
           <DropdownMenuItem>
-            <button className="flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5">
+            <Button className={cn("justify-start px-[14%] py-4 w-full")}>
               <Image
                 src={"/images/wallet-icon.png"}
                 alt="avater"
@@ -66,10 +47,12 @@ export default function MobileTop() {
                 className="rounded-full size-[23px]"
               />
               <p className="text-base font-normal">SPF0V...HN51D</p>
-            </button>
+            </Button>
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Button>Disconnect wallet</Button>
+          <DropdownMenuItem className="bg-black">
+            <Button className={cn("justify-start px-[14%] py-4 w-full")}>
+              Disconnect wallet
+            </Button>
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>

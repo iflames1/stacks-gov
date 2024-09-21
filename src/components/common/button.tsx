@@ -10,7 +10,7 @@ export default function Button({
   return (
     <div
       className={cn(
-        "flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5 text-base font-normal",
+        "flex items-center justify-center gap-3 border border-white/[0.02] rounded-[2px] bg-white/5 text-base font-normal",
         className
       )}
     >
