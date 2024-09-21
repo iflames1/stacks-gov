@@ -13,6 +13,7 @@ import Button from "../common/button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import MobileNavigation from "../home/mobile-navigation";
+import { FaPowerOff } from "react-icons/fa6";
 
 export default function MobileTop({ className }: { className?: string }) {
   return (
@@ -22,36 +23,35 @@ export default function MobileTop({ className }: { className?: string }) {
           <FiMenu />
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className={"w-60"}>
+      <DropdownMenuContent className={"w-60 border border-white/[0.02] "}>
         <MobileNavigation />
 
         <DropdownMenuSeparator className="my-4" />
 
-        <DropdownMenuGroup>
+        <DropdownMenuGroup className="flex flex-col gap-1 p-1">
           <DropdownMenuItem>
-            <Button className={cn("justify-start px-[14%] py-4 w-full")}>
-              <IoNotifications className="size-6 text-white/[0.4]" />
+            <Button className={cn("justify-start px-[14%] py-3 w-full")}>
+              <IoNotifications className="size-4 text-white/[0.4]" />
               <span>Mute</span>
             </Button>
           </DropdownMenuItem>
-        </DropdownMenuGroup>
 
-        <DropdownMenuGroup>
           <DropdownMenuItem>
-            <Button className={cn("justify-start px-[14%] py-4 w-full")}>
+            <Button className={cn("justify-start px-[14%] py-3 w-full")}>
               <Image
                 src={"/images/wallet-icon.png"}
                 alt="avater"
-                width={23}
-                height={23}
+                width={16}
+                height={16}
                 className="rounded-full size-[23px]"
               />
               <p className="text-base font-normal">SPF0V...HN51D</p>
             </Button>
           </DropdownMenuItem>
-          <DropdownMenuItem className="bg-black">
-            <Button className={cn("justify-start px-[14%] py-4 w-full")}>
-              Disconnect wallet
+          <DropdownMenuItem className="">
+            <Button className={cn("justify-start px-[14%] py-3 w-full")}>
+              <FaPowerOff className="size-4 text-white/[0.4]" />
+              <span>Disconnect wallet</span>
             </Button>
           </DropdownMenuItem>
         </DropdownMenuGroup>
