@@ -3,7 +3,6 @@ import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
 import MobileTop from "./mobile-top";
-import Test from "./test";
 import Search from "./search";
 
 export default function Top() {
