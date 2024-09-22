@@ -4,6 +4,7 @@ import { FiSearch } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
 import MobileTop from "./mobile-top";
 import Search from "./search";
+import Button from "../common/button";
 
 export default function Top() {
   return (
@@ -32,10 +33,10 @@ export default function Top() {
         <div className="px-8 lg:flex hidden items-center justify-between w-full">
           <Search className="w-1/2 hidden lg:flex" />
           <div className="flex items-center gap-6">
-            <button className="p-3 bg-white/5 rounded-full">
+            <Button className="p-3 bg-white/5 rounded-full">
               <IoNotifications className="size-6 text-white/[0.4]" />
-            </button>
-            <button className="flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5">
+            </Button>
+            <Button className="px-4 py-3 rounded-sm">
               <Image
                 src={"/images/wallet-icon.png"}
                 alt="avater"
@@ -44,7 +45,7 @@ export default function Top() {
                 className="rounded-full size-[23px]"
               />
               <p className="text-base font-normal">SPF0V...HN51D</p>
-            </button>
+            </Button>
           </div>
         </div>
       </div>
