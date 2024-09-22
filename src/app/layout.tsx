@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-manrope text-black dark:text-white">
+      <body className="font-manrope text-black dark:text-white overflow-y-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
