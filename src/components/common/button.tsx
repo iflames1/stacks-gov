@@ -1,14 +1,15 @@
 import { cn } from "@/lib/utils";
 
-export default function Button({
-  className,
-  children,
-}: {
+interface ButtonProps {
   className?: string;
   children?: React.ReactNode;
-}) {
+  onClick?: () => void;
+}
+
+export default function Button({ className, children, onClick }: ButtonProps) {
   return (
-    <div
+    <button
+      onClick={onClick}
       className={cn(
         "flex items-center justify-center gap-3 border border-white/[0.02] rounded-[2px] bg-white/5 text-base font-normal cursor-pointer",
         "hover:bg-white/10 focus:bg-white/10 active:bg-white/20",
@@ -18,6 +19,6 @@ export default function Button({
       )}
     >
       {children}
-    </div>
+    </button>
   );
 }
