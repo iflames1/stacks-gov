@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { ThemeModeToggle } from "../toggle-theme";
 import SideNav from "./side-nav";
 import Top from "./top";
@@ -15,7 +16,7 @@ export default function LayoutSetup({
           <SideNav />
           <ThemeModeToggle />
         </div>
-        {children}
+        <main className="bg-main-gradient w-full">{children}</main>
       </div>
     </div>
   );
