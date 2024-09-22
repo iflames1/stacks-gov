@@ -40,7 +40,7 @@ export default function JoinedDAO() {
         {Array.from({ length: 3 }).map((_, index) => (
           <div key={index} className="flex items-center gap-2">
             <div className="lg:p-2 p-1 border rounded-lg border-white/35 animate-pulse">
-              <Skeleton className="min-h-11 min-w-11" />
+              <Skeleton className="h-11 w-11" />
             </div>
           </div>
         ))}
