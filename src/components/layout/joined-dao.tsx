@@ -6,7 +6,6 @@ import { Skeleton } from "../ui/skeleton";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { FaPlus } from "react-icons/fa6";
 
 export default function JoinedDAO() {
   const [joinedDAO, setJoinedDAO] = useState<DAO[] | null>(null);
@@ -40,7 +39,7 @@ export default function JoinedDAO() {
       <div className="flex flex-col lg:gap-4 gap-2 px-2 justify-center items-center">
         {Array.from({ length: 3 }).map((_, index) => (
           <div key={index} className="flex items-center gap-2">
-            <div className="lg:p-2 p-1 border rounded-lg border-white/35">
+            <div className="lg:p-2 p-1 border rounded-lg border-white/35 animate-pulse">
               <Skeleton className="min-h-11 min-w-11" />
             </div>
           </div>
@@ -50,42 +49,32 @@ export default function JoinedDAO() {
 
   if (!joinedDAO) return null;
 
-  return loading
-    ? Array.from({ length: 3 }).map((_, index) => (
-        <div key={index} className="flex items-center gap-2">
-          <div className="lg:p-2 p-1 border rounded-lg border-white/35">
-            <Skeleton className="min-h-11 min-w-11" />
-          </div>
-        </div>
-      ))
-    : joinedDAO.map((dao) => (
-        <Link
-          key={dao.username}
-          href={dao.username.toLocaleLowerCase()}
-          className="flex items-center gap-2"
-        >
-          <div
-            className={`size-4 bg-white rounded-full ${
-              dao.username.toLowerCase() === username
-                ? "lg:block hidden"
-                : "hidden"
-            }`}
-          ></div>
-          <div
-            className={`lg:p-2 p-1 border rounded-lg hover:border-white ${
-              dao.username.toLowerCase() === username
-                ? "border-white"
-                : "border-white/35"
-            }`}
-          >
-            <Image
-              src={dao.image}
-              alt={dao.username}
-              width={45}
-              height={45}
-              className="rounded-md"
-            />
-          </div>
-        </Link>
-      ));
+  return joinedDAO.map((dao) => (
+    <Link
+      key={dao.username}
+      href={dao.username.toLocaleLowerCase()}
+      className="flex items-center gap-2"
+    >
+      <div
+        className={`size-4 bg-white rounded-full ${
+          dao.username.toLowerCase() === username ? "lg:block hidden" : "hidden"
+        }`}
+      ></div>
+      <div
+        className={`lg:p-2 p-1 border rounded-lg hover:border-white ${
+          dao.username.toLowerCase() === username
+            ? "border-white"
+            : "border-white/35"
+        }`}
+      >
+        <Image
+          src={dao.image}
+          alt={dao.username}
+          width={45}
+          height={45}
+          className="rounded-md"
+        />
+      </div>
+    </Link>
+  ));
 }
