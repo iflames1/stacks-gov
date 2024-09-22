@@ -1,10 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FiSearch } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
-import MobileTop from "./mobile-top";
 import Search from "./search";
 import Button from "../common/button";
+import dynamic from "next/dynamic";
+import { Skeleton } from "../ui/skeleton";
+
+const MobileTop = dynamic(() => import("./mobile-top"), {
+  ssr: false,
+  loading: () => (
+    <div className="xl:hidden pr-2 py-2">
+      <Button className="px-4 py-3">
+        <Skeleton className="size-4" />
+      </Button>
+    </div>
+  ),
+});
 
 export default function Top() {
   return (
@@ -30,6 +41,7 @@ export default function Top() {
         <Search className="flex xl:hidden w-full max-w-sm flex-shrink" />
 
         <MobileTop className="xl:hidden pr-2 py-2" />
+
         <div className="px-8 xl:flex hidden items-center justify-between w-full">
           <Search className="w-1/2 hidden xl:flex" />
           <div className="flex items-center gap-6">
