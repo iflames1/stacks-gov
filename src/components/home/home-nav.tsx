@@ -1,15 +1,44 @@
+"use client";
+import { usePathname } from "next/navigation";
 import Nav from "./nav";
+import { cn } from "@/lib/utils";
 
-export default function HomeNav({ children }: { children: React.ReactNode }) {
+export const paths = [
+  {
+    title: "Dashboard",
+    path: "/",
+  },
+  {
+    title: "Explore",
+    path: "/explore",
+  },
+  {
+    title: "Delegates",
+    path: "/delegates",
+  },
+  {
+    title: "Activity",
+    path: "/activity",
+  },
+];
+
+export default function HomeNav() {
+  const pathname = usePathname();
+
+  const visiblePaths = paths.map((path) => path.path);
+
   return (
-    <div className="flex">
-      <div className="w-[13.7vw] h-[calc(100vh-106.59px)] border-r border-white/15 lg:flex hidden flex-col gap-4 pt-6 bg-black">
-        <Nav title="Dashboard" path="/" />
-        <Nav title="Explore" path="/explore" />
-        <Nav title="Delegates" path="/delegates" />
-        <Nav title="Activity" path="/activity" />
-      </div>
-      <div className="w-full">{children}</div>
+    <div
+      className={cn(
+        visiblePaths.includes(pathname)
+          ? "xl:flex hidden flex-col gap-4"
+          : "hidden",
+        "w-[13.9vw] h-[calc(100vh-106.59px)] border-r border-white/15 pt-6 bg-black"
+      )}
+    >
+      {paths.map((path) => (
+        <Nav key={path.title} title={path.title} path={path.path} />
+      ))}
     </div>
   );
 }

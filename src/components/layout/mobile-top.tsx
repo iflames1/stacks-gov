@@ -26,8 +26,6 @@ export default function MobileTop({ className }: { className?: string }) {
       <DropdownMenuContent className={"w-60 border border-white/[0.02] "}>
         <MobileNavigation />
 
-        <DropdownMenuSeparator className="my-4" />
-
         <DropdownMenuGroup className="flex flex-col gap-1 p-1">
           <DropdownMenuItem>
             <Button className={cn("justify-start px-[14%] py-3 w-full")}>
