@@ -5,14 +5,14 @@ export default function Search({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        `flex items-center gap-4 pl-4 py-3 bg-white/[0.03] border border-white/[0.02] rounded-sm`,
+        `flex items-center gap-4 pl-4 py-3 bg-white/[0.03] border border-white/[0.02] rounded-sm group focus-within:border-white/50`,
         className
       )}
     >
-      <FiSearch className="size-4 text-white/50" />
+      <FiSearch className="size-4 text-white/30 group-focus-within:text-white/50" />
       <input
         placeholder="Search DAOS..."
-        className="placeholder:text-white/30 text-white text-sm w-full h-4 bg-white/0 outline-none"
+        className="placeholder:text-white/30 text-white/30 focus:text-white text-sm w-full h-4 bg-white/0 outline-none"
       />
     </div>
   );

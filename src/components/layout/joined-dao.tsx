@@ -72,7 +72,7 @@ export default function JoinedDAO() {
             }`}
           ></div>
           <div
-            className={`lg:p-2 p-1 border rounded-lg ${
+            className={`lg:p-2 p-1 border rounded-lg hover:border-white ${
               dao.username.toLowerCase() === username
                 ? "border-white"
                 : "border-white/35"
@@ -83,7 +83,7 @@ export default function JoinedDAO() {
               alt={dao.username}
               width={45}
               height={45}
-              className=""
+              className="rounded-md"
             />
           </div>
         </Link>

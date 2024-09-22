@@ -27,21 +27,24 @@ export default function Nav({ path, title }: NavProps) {
     <Link
       href={path}
       className={cn(
-        "flex items-center gap-4 py-4 pl-[14%] lg:pr-0 pr-[14%] w-full",
+        "group flex items-center gap-4 py-4 pl-[14%] lg:pr-0 pr-[14%] w-full",
         {
           "bg-teal/5 border-r-2 border-teal": pathname === path,
         }
       )}
     >
       <Icon
-        className={cn("size-6 text-white/40", {
+        className={cn("size-6 text-white/40 group-hover:text-accent-blue/40", {
           "text-accent-blue/40": pathname === path,
         })}
       />
       <span
-        className={cn("text-sm font-normal text-white/50", {
-          "text-white font-medium": pathname === path,
-        })}
+        className={cn(
+          "text-sm font-normal text-white/50 group-hover:text-white",
+          {
+            "text-white font-medium": pathname === path,
+          }
+        )}
       >
         {title}
       </span>
