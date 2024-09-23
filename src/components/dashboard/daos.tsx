@@ -112,7 +112,7 @@ export default function Daos() {
                   "group-hover:bg-white/45 transition-colors duration-200 ease-in-out"
                 )}
               >
-                <Link href={dao.username}>OPEN</Link>
+                <Link href={dao.username.toLowerCase()}>OPEN</Link>
               </Button>
             ) : (
               <Button
