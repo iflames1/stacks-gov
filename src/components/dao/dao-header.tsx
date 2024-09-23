@@ -6,6 +6,7 @@ import { BsPersonCheck } from "react-icons/bs";
 import Button from "../common/button";
 import { FaPlus } from "react-icons/fa6";
 import Link from "next/link";
+import DaoHeaderNav from "./dao-header-nav";
 
 export default function DaoHeader({ dao }: { dao: DAO }) {
   console.log(dao);
@@ -52,24 +53,7 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
       </div>
       <div className="h-px w-[calc(100%-32px)] mx-auto bg-white/5"></div>
       <div className="flex items-center gap-8 text-white/40 text-sm font-normal px-4 pt-4">
-        <Link
-          href={`/${dao.username}/`}
-          className="py-4 px-4 border-b-[2px] border-accent-blue text-white"
-        >
-          Proposals
-        </Link>
-        <Link
-          href={`/${dao.username.toLowerCase()}/delegate`}
-          className="py-4 px-4"
-        >
-          Delegate
-        </Link>
-        <Link href={`/${dao.username}/treasury`} className="py-4 px-4">
-          Treasury
-        </Link>
-        <Link href={`/${dao.username}/about`} className="py-4 px-4">
-          About
-        </Link>
+        <DaoHeaderNav username={dao.username} />
       </div>
     </div>
   );
