@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import React from "react";
 import { FiUsers } from "react-icons/fi";
 import { LuArrowUpDown } from "react-icons/lu";
 

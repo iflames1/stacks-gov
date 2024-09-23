@@ -1,8 +1,8 @@
-import React from "react";
 import Stats from "./stats";
 import Button from "../common/button";
 import { FaPlus } from "react-icons/fa6";
 import { cn } from "@/lib/utils";
+import Daos from "./daos";
 
 export default function Dashboard() {
   return (
@@ -20,6 +20,7 @@ export default function Dashboard() {
       </div>
       <Stats />
       <div className="w-full h-px bg-white/5 my-8"></div>
+      <Daos />
     </div>
   );
 }

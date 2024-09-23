@@ -18,14 +18,10 @@ export default function JoinedDAO() {
     async function fetchJoinedDao() {
       try {
         const response = await axios.get("/data.json");
-        console.log(response);
         const data: DAO[] = response.data;
-        console.log(data);
         setJoinedDAO(data.filter((dao) => dao.joined));
       } catch (error) {
-        console.log("error", error);
         console.error("Error fetching DAOs:", error);
-        setJoinedDAO([]);
       } finally {
         setLoading(false);
       }
