@@ -7,6 +7,7 @@ import Button from "../common/button";
 import Image from "next/image";
 import { MdVerifiedUser } from "react-icons/md";
 import { Skeleton } from "../ui/skeleton";
+import Link from "next/link";
 
 export default function Daos() {
   const [daos, setDaos] = useState<DAO[] | null>(null);
@@ -103,14 +104,26 @@ export default function Daos() {
                 ? `${dao.proposals[0].description.substring(0, 160)}...`
                 : dao.proposals[0].description}
             </p>
-            <Button
-              className={cn(
-                "w-full font-manrope text-xs font-bold p-3 border-white/5 bg-accent-blue/15",
-                "group-hover:bg-white/45 transition-colors duration-200 ease-in-out"
-              )}
-            >
-              Join
-            </Button>
+            {dao.joined ? (
+              <Button
+                asChild={true}
+                className={cn(
+                  "w-full font-jost text-xs font-bold p-3",
+                  "group-hover:bg-white/45 transition-colors duration-200 ease-in-out"
+                )}
+              >
+                <Link href={dao.username}>OPEN</Link>
+              </Button>
+            ) : (
+              <Button
+                className={cn(
+                  "w-full font-jost text-xs font-bold p-3 border-white/5 bg-accent-blue/15",
+                  "group-hover:bg-white/45 transition-colors duration-200 ease-in-out"
+                )}
+              >
+                JOIN
+              </Button>
+            )}
           </div>
         </div>
       ))}
