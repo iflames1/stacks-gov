@@ -6,7 +6,7 @@ import Daos from "./daos";
 
 export default function Dashboard() {
   return (
-    <div>
+    <div className="w-full">
       <div className="flex justify-between items-center pb-3">
         <h1 className="sm:text-2xl text-xl font-normal font-jost">Dashboard</h1>
         <Button
