@@ -5,6 +5,7 @@ import Link from "next/link";
 import { fetchDao } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { DAO } from "@/types/dao";
+import DaoHeader from "./dao-header";
 
 export default function Dao({ username }: { username: string }) {
   const [dao, setDao] = useState<DAO | null>(null);
@@ -29,13 +30,15 @@ export default function Dao({ username }: { username: string }) {
 
   return (
     <div className="w-full">
-      <Button asChild={true} className="w-fit py-2 px-3 rounded-full gap-2">
-        <Link href={"/"}>
-          <IoIosArrowBack className="size-6" />
-          <span className="font-normal text-sm">Back</span>
-        </Link>
-      </Button>
-      <p>{dao?.username}</p>
+      <div className="space-y-4">
+        <Button asChild={true} className="w-fit py-2 px-3 rounded-full gap-2">
+          <Link href={"/"}>
+            <IoIosArrowBack className="size-6" />
+            <span className="font-normal text-sm">Back</span>
+          </Link>
+        </Button>
+        <DaoHeader dao={dao} />
+      </div>
     </div>
   );
 }
