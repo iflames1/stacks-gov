@@ -1,14 +1,24 @@
 import { cn } from "@/lib/utils";
+import { Slot } from "@radix-ui/react-slot";
+
+interface ButtonProps {
+  className?: string;
+  children?: React.ReactNode;
+  onClick?: () => void;
+  asChild?: boolean;
+}
 
 export default function Button({
   className,
   children,
-}: {
-  className?: string;
-  children?: React.ReactNode;
-}) {
+  onClick,
+  asChild = false,
+}: ButtonProps) {
+  const Component = asChild ? Slot : "button";
+
   return (
-    <div
+    <Component
+      onClick={onClick}
       className={cn(
         "flex items-center justify-center gap-3 border border-white/[0.02] rounded-[2px] bg-white/5 text-base font-normal cursor-pointer",
         "hover:bg-white/10 focus:bg-white/10 active:bg-white/20",
@@ -18,6 +28,6 @@ export default function Button({
       )}
     >
       {children}
-    </div>
+    </Component>
   );
 }

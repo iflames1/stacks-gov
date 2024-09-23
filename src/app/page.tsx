@@ -1,9 +1,9 @@
-import HomeNav from "@/components/home/home-nav";
+import Dashboard from "@/components/dashboard/dashboard";
 
 export default function Home() {
   return (
     <main className="w-full">
-      <HomeNav>Hello</HomeNav>
+      <Dashboard />
     </main>
   );
 }

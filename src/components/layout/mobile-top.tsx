@@ -4,14 +4,12 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { FiMenu } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
 import Button from "../common/button";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
 import MobileNavigation from "../home/mobile-navigation";
 import { FaPowerOff } from "react-icons/fa6";
 
@@ -25,8 +23,6 @@ export default function MobileTop({ className }: { className?: string }) {
       </DropdownMenuTrigger>
       <DropdownMenuContent className={"w-60 border border-white/[0.02] "}>
         <MobileNavigation />
-
-        <DropdownMenuSeparator className="my-4" />
 
         <DropdownMenuGroup className="flex flex-col gap-1 p-1">
           <DropdownMenuItem>

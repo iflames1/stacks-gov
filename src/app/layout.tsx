@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import LayoutSetup from "@/components/layout/layout";
+import LayoutSetup from "@/components/layout/layout-setup";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-manrope text-black dark:text-white">
+      <body className="font-manrope text-black dark:text-white overflow-y-hidden">
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
