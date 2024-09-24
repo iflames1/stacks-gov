@@ -32,12 +32,12 @@ export default function ProposalHeader({ proposal }: { proposal: PROPOSAL }) {
         </div>
         <div className="space-y-4 p-4 border border-white/30 rounded bg-accent-blue">
           <p className="font-jost text-xl font-semibold">{proposal.topic}</p>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3">
             <Button className="py-3 px-4 rounded-lg w-fit" asChild={true}>
               <Link href="">
                 <TbMessage className="size-6" />{" "}
-                <span className="text-base text-white/80 font-normal">
-                  Join this discussion
+                <span className="text-base text-nowrap text-white/80 font-normal">
+                  Join discussion
                 </span>{" "}
                 <MdInsertLink className="size-4" />
               </Link>
