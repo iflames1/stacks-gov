@@ -90,7 +90,7 @@ export default function Daos() {
               <p
                 className={cn(
                   "text-sm font-normal text-white/60",
-                  "text-white/80"
+                  "group-hover:text-white/80"
                 )}
               >
                 18k members
