@@ -53,7 +53,7 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
             <ProposalHeader proposal={proposal} />
           </div>
         </div>
-        <Information />
+        <Information proposal={proposal} />
       </div>
       <div></div>
     </div>

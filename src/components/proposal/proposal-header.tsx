@@ -26,7 +26,7 @@ export default function ProposalHeader({ proposal }: { proposal: PROPOSAL }) {
             <span className={cn("text-white/30 font-normal")}>by</span>{" "}
             <span className="font-semibold">{proposal.author}</span>
           </p>
-          <p className="border border-white/15 rounded-full px-2 py-1">
+          <p className="border border-white/15 rounded-full px-2 py-[2px]">
             <span className="text-white/60 text-xs font-normal">Core</span>
           </p>
         </div>
