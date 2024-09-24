@@ -9,6 +9,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import ProposalHeader from "./proposal-header";
 import Information from "./information";
 import Result from "./result";
+import Description from "./description";
 
 interface ProposalProps {
   username: string;
@@ -38,9 +39,9 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
   }
 
   return (
-    <div>
+    <div className="flex">
       <div className="w-1/3 border-r border-white/5">
-        <div className="pr-8 pb-8 border-b border-white/5">
+        <div className="pr-[8%] pb-[8%] border-b border-white/5">
           <div className="space-y-6">
             <Button
               asChild={true}
@@ -57,7 +58,9 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
         <Information proposal={proposal} />
         <Result proposal={proposal} />
       </div>
-      <div></div>
+      <div className="w-full">
+        <Description proposal={proposal} />
+      </div>
     </div>
   );
 }
