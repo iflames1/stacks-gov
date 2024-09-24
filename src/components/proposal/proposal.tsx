@@ -3,6 +3,11 @@
 import { fetchProposal } from "@/lib/utils";
 import { PROPOSAL } from "@/types/dao";
 import { useEffect, useState } from "react";
+import Button from "../common/button";
+import Link from "next/link";
+import { IoIosArrowBack } from "react-icons/io";
+import ProposalHeader from "./proposal-header";
+import Information from "./information";
 
 interface ProposalProps {
   username: string;
@@ -31,5 +36,26 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
     return <div>something went wrong</div>;
   }
 
-  return <div>{proposal.author}</div>;
+  return (
+    <div>
+      <div className="w-1/3 border-r border-white/5">
+        <div className="pr-8 pb-8 border-b border-white/5">
+          <div className="space-y-6">
+            <Button
+              asChild={true}
+              className="w-fit py-2 px-3 rounded-full gap-2"
+            >
+              <Link href={`/${username}`}>
+                <IoIosArrowBack className="size-6" />
+                <span className="font-normal text-sm">Back</span>
+              </Link>
+            </Button>
+            <ProposalHeader proposal={proposal} />
+          </div>
+        </div>
+        <Information />
+      </div>
+      <div></div>
+    </div>
+  );
 }

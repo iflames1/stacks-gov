@@ -31,7 +31,7 @@ export default function Proposals({ dao }: { dao: DAO }) {
                     height={32}
                     className="rounded-full border border-white/5"
                   />
-                  <p className="text-base">
+                  <p className="text-base font-jost">
                     <span
                       className={cn(
                         "text-white/30 font-normal",
