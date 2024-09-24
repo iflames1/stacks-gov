@@ -19,7 +19,7 @@ export default function Dashboard() {
         </Button>
       </div>
       <Stats />
-      <div className="w-full h-px bg-white/5 my-8"></div>
+      <div className="w-full h-px bg-white/5 my-8" />
       <Daos />
     </div>
   );

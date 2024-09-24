@@ -7,6 +7,7 @@ import Button from "../common/button";
 import { FaPlus } from "react-icons/fa6";
 import Link from "next/link";
 import DaoHeaderNav from "./dao-header-nav";
+import Proposals from "./proposals";
 
 export default function DaoHeader({ dao }: { dao: DAO }) {
   console.log(dao);
@@ -51,7 +52,7 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
           </Button>
         </div>
       </div>
-      <div className="h-px w-[calc(100%-32px)] mx-auto bg-white/5"></div>
+      <div className="h-px w-[calc(100%-32px)] mx-auto bg-white/5" />
       <div className="flex items-center gap-8 text-white/40 text-sm font-normal px-4 pt-4">
         <DaoHeaderNav username={dao.username} />
       </div>
