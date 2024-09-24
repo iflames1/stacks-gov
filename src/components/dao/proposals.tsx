@@ -5,6 +5,7 @@ import { IoMdArrowDown } from "react-icons/io";
 import { IoMdArrowUp } from "react-icons/io";
 import { FaRegClock } from "react-icons/fa6";
 import Button from "../common/button";
+import Link from "next/link";
 
 export default function Proposals({ dao }: { dao: DAO }) {
   return (
@@ -12,7 +13,8 @@ export default function Proposals({ dao }: { dao: DAO }) {
       <h2 className="font-jost text-2xl font-normal">Proposals</h2>
       <div className="grid 2xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 gap-6">
         {dao.proposals.map((proposal, index) => (
-          <div
+          <Link
+            href={`${dao.username.toLocaleLowerCase()}/proposal/${index}`}
             key={index}
             className={cn(
               "bg-white/[0.03] border border-white/5 rounded",
@@ -122,7 +124,7 @@ export default function Proposals({ dao }: { dao: DAO }) {
                 </div>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
