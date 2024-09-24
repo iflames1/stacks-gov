@@ -8,6 +8,7 @@ import Link from "next/link";
 import { IoIosArrowBack } from "react-icons/io";
 import ProposalHeader from "./proposal-header";
 import Information from "./information";
+import Result from "./result";
 
 interface ProposalProps {
   username: string;
@@ -54,6 +55,7 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
           </div>
         </div>
         <Information proposal={proposal} />
+        <Result proposal={proposal} />
       </div>
       <div></div>
     </div>
