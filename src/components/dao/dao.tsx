@@ -6,6 +6,7 @@ import { fetchDao } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { DAO } from "@/types/dao";
 import DaoHeader from "./dao-header";
+import Proposals from "./proposals";
 
 export default function Dao({ username }: { username: string }) {
   const [dao, setDao] = useState<DAO | null>(null);
@@ -29,7 +30,7 @@ export default function Dao({ username }: { username: string }) {
   }
 
   return (
-    <div className="w-full">
+    <div className="w-full space-y-10">
       <div className="space-y-4">
         <Button asChild={true} className="w-fit py-2 px-3 rounded-full gap-2">
           <Link href={"/"}>
@@ -39,6 +40,7 @@ export default function Dao({ username }: { username: string }) {
         </Button>
         <DaoHeader dao={dao} />
       </div>
+      <Proposals dao={dao} />
     </div>
   );
 }
