@@ -5,15 +5,13 @@ import { MdVerifiedUser } from "react-icons/md";
 import { BsPersonCheck } from "react-icons/bs";
 import Button from "../common/button";
 import { FaPlus } from "react-icons/fa6";
-import Link from "next/link";
 import DaoHeaderNav from "./dao-header-nav";
-import Proposals from "./proposals";
 
 export default function DaoHeader({ dao }: { dao: DAO }) {
   console.log(dao);
   return (
     <div className="bg-white/[0.04] rounded">
-      <div className="flex items-center justify-between p-4">
+      <div className="flex sm:items-center items-start gap-4 justify-between sm:flex-row flex-col sm:p-4 p-2">
         <div className="flex items-center gap-6">
           <Image
             src={dao.image}
@@ -38,7 +36,7 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <Button className="px-4 py-3 gap-2">
+          <Button className="sm:py-3 py-2 sm:px-4 px-2 gap-2">
             <BsPersonCheck className="size-6" />
             <span className="text-sm font-bold">Joined</span>
           </Button>
@@ -53,7 +51,7 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
         </div>
       </div>
       <div className="h-px w-[calc(100%-32px)] mx-auto bg-white/5" />
-      <div className="flex items-center gap-8 text-white/40 text-sm font-normal px-4 pt-4">
+      <div className="flex items-center sm:gap-8 gap-4 text-white/40 text-sm font-normal sm:px-4 px-2 sm:pt-4 pt-2 overflow-auto">
         <DaoHeaderNav username={dao.username} />
       </div>
     </div>

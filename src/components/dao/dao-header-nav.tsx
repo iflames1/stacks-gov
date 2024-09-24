@@ -15,7 +15,7 @@ export default function DaoHeaderNav({ username }: { username: string }) {
       key={path}
       //href={`/${username}/${path}`}
       className={cn(
-        "p-4 border-accent-blue text-sm capitalize font-normal text-white/40 cursor-pointer",
+        "sm:p-4 p-2 border-accent-blue text-sm capitalize font-normal text-white/40 cursor-pointer",
         "hover:text-white hover:border-b-[2px]",
         path === "" && "text-white border-b-[2px]"
       )}
