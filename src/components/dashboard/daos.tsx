@@ -42,7 +42,7 @@ export default function Daos() {
                 <Skeleton className="w-20 h-5" />
               </div>
             </div>
-            <div className="w-full h-px bg-white/[0.07]"></div>
+            <div className="w-full h-px bg-white/[0.07]" />
             <div className="space-y-5 p-4">
               <div className="space-y-1">
                 <Skeleton className="h-3 w-full" />
@@ -90,14 +90,14 @@ export default function Daos() {
               <p
                 className={cn(
                   "text-sm font-normal text-white/60",
-                  "text-white/80"
+                  "group-hover:text-white/80"
                 )}
               >
                 18k members
               </p>
             </div>
           </div>
-          <div className="w-full h-px bg-white/[0.07] group-hover:bg-white/15 transition-colors duration-200 ease-in-out"></div>
+          <div className="w-full h-px bg-white/[0.07] group-hover:bg-white/15 transition-colors duration-200 ease-in-out" />
           <div className="space-y-5 p-4">
             <p className={cn("text-white/40 text-xs", "text-white/80")}>
               {dao.proposals[0].description.length > 160
