@@ -10,6 +10,7 @@ import ProposalHeader from "./proposal-header";
 import Information from "./information";
 import Result from "./result";
 import Description from "./description";
+import Votes from "./votes";
 
 interface ProposalProps {
   username: string;
@@ -60,6 +61,7 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
       </div>
       <div className="w-full">
         <Description proposal={proposal} />
+        <Votes proposal={proposal} />
       </div>
     </div>
   );
