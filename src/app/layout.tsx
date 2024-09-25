@@ -18,8 +18,9 @@ export default function RootLayout({
       <body className="font-manrope text-black dark:text-white overflow-y-hidden">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          //defaultTheme="system"
+          //enableSystem
+          defaultTheme="dark"
           disableTransitionOnChange
         >
           <LayoutSetup>{children}</LayoutSetup>
