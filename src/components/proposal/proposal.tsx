@@ -59,7 +59,7 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
         <Information proposal={proposal} />
         <Result proposal={proposal} />
       </div>
-      <div className="w-full">
+      <div className="w-full relative">
         <Description proposal={proposal} />
         <Votes proposal={proposal} />
       </div>
