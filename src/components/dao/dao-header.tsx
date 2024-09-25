@@ -35,7 +35,7 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <Button className="sm:py-3 py-2 sm:px-4 px-2 gap-2">
             <BsPersonCheck className="size-6" />
             <span className="text-sm font-bold">Joined</span>
@@ -46,7 +46,7 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
             }
           >
             <FaPlus />
-            <span>Create a Proposal</span>
+            <span className="text-nowrap">Create a Proposal</span>
           </Button>
         </div>
       </div>

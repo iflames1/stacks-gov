@@ -40,9 +40,9 @@ export default function Proposal({ username, proposalID }: ProposalProps) {
   }
 
   return (
-    <div className="flex">
-      <div className="w-1/3 border-r border-white/5">
-        <div className="pr-[8%] pb-[8%] border-b border-white/5">
+    <div className="flex flex-col lg:flex-row">
+      <div className="w-full lg:w-1/3 lg:border-r border-white/5">
+        <div className="lg:pr-[8%] pb-[8%] border-b border-white/5">
           <div className="space-y-6">
             <Button
               asChild={true}

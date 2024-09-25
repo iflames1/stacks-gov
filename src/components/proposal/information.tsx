@@ -2,7 +2,7 @@ import { PROPOSAL } from "@/types/dao";
 
 export default function Information({ proposal }: { proposal: PROPOSAL }) {
   return (
-    <div className="py-[8%] pr-[8%] border-b border-white/5 space-y-4">
+    <div className="py-[8%] lg:pr-[8%] border-b border-white/5 space-y-4">
       <h3 className="font-jost text-xl font-semibold">Information</h3>
       <div className="flex justify-between">
         <p className="text-sm font-medium text-white/50">Voting System</p>
