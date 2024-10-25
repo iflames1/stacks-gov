@@ -13,7 +13,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import Image from "next/image";
-import { FaPlus } from "react-icons/fa6";
 import Button from "../common/button";
 
 interface FormValues {
@@ -22,7 +21,7 @@ interface FormValues {
   profilePic: File | null;
 }
 
-export default function CreateDaoForm() {
+export default function DaoForm() {
   const [imagePreview, setImagePreview] = useState<string | null>(null);
 
   const form = useForm({
@@ -148,8 +147,9 @@ export default function CreateDaoForm() {
             type="submit"
             className="w-full bg-button-gradient py-3 gap-2 rounded-[2px]"
           >
-            <FaPlus />
-            <span>Create a DAO</span>
+            {/*<FaPlus />
+            <span>Create a DAO</span>*/}
+            Submit
           </button>
         </Button>
       </form>
