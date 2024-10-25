@@ -1,7 +1,7 @@
 import Stats from "./stats";
 import Daos from "./daos";
 import FormDialog from "../common/form-dialog";
-import CreateDaoForm from "./create-dao-form";
+import DaoForm from "./dao-form";
 
 export default function Dashboard() {
   return (
@@ -9,7 +9,7 @@ export default function Dashboard() {
       <div className="flex justify-between items-center pb-3">
         <h1 className="sm:text-2xl text-xl font-normal font-jost">Dashboard</h1>
         <FormDialog trigger="Create a DAO" title="Create a DAO" addIcon={true}>
-          <CreateDaoForm />
+          <DaoForm />
         </FormDialog>
       </div>
       <Stats />

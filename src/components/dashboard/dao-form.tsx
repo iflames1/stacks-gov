@@ -22,7 +22,7 @@ interface FormValues {
   profilePic: File | null;
 }
 
-export default function CreateDaoForm() {
+export default function DaoForm() {
   const [imagePreview, setImagePreview] = useState<string | null>(null);
 
   const form = useForm({
