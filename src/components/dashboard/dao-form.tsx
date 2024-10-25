@@ -13,7 +13,6 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import Image from "next/image";
-import { FaPlus } from "react-icons/fa6";
 import Button from "../common/button";
 
 interface FormValues {

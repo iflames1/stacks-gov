@@ -4,8 +4,9 @@ import React from "react";
 import { MdVerifiedUser } from "react-icons/md";
 import { BsPersonCheck } from "react-icons/bs";
 import Button from "../common/button";
-import { FaPlus } from "react-icons/fa6";
 import DaoHeaderNav from "./dao-header-nav";
+import FormDialog from "../common/form-dialog";
+import ProposalForm from "./proposal-form";
 
 export default function DaoHeader({ dao }: { dao: DAO }) {
   console.log(dao);
@@ -40,14 +41,13 @@ export default function DaoHeader({ dao }: { dao: DAO }) {
             <BsPersonCheck className="size-6" />
             <span className="text-sm font-bold">Joined</span>
           </Button>
-          <Button
-            className={
-              "bg-button-gradient sm:py-3 py-2 sm:px-4 px-2 sm:gap-[10px] gap-2"
-            }
+          <FormDialog
+            trigger="Create a Proposal"
+            addIcon={true}
+            title="Create a proposal"
           >
-            <FaPlus />
-            <span className="text-nowrap">Create a Proposal</span>
-          </Button>
+            <ProposalForm />
+          </FormDialog>
         </div>
       </div>
       <div className="h-px w-[calc(100%-32px)] mx-auto bg-white/5" />
