@@ -2,7 +2,7 @@ import { PROPOSAL } from "@/types/dao";
 
 export default function Result({ proposal }: { proposal: PROPOSAL }) {
   return (
-    <div className="pt-[8%] pb-[8%] lg:pb-0 lg:pr-[8%] border-b lg:border-b border-white/5 space-y-4">
+    <div className="pt-[8%] pb-[8%] lg:pb-0 lg:pr-[8%] border-b lg:border-b-0 border-white/5 space-y-4">
       <h3>Result</h3>
       <div className="space-y-6">
         <div className="flex justify-between">
