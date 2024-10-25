@@ -148,8 +148,9 @@ export default function CreateDaoForm() {
             type="submit"
             className="w-full bg-button-gradient py-3 gap-2 rounded-[2px]"
           >
-            <FaPlus />
-            <span>Create a DAO</span>
+            {/*<FaPlus />
+            <span>Create a DAO</span>*/}
+            Submit
           </button>
         </Button>
       </form>
