@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { IoNotifications } from "react-icons/io5";
+import AuthButton from "./auth-button";
 import Search from "./search";
 import Button from "../common/button";
 import dynamic from "next/dynamic";
@@ -48,16 +49,7 @@ export default function Top() {
             <Button className="p-3 bg-white/5 rounded-full">
               <IoNotifications className="size-6 text-white/[0.4]" />
             </Button>
-            <Button className="px-4 py-3 rounded-sm">
-              <Image
-                src={"/images/wallet-icon.png"}
-                alt="avater"
-                width={23}
-                height={23}
-                className="rounded-full size-[23px]"
-              />
-              <p className="text-base font-normal">SPF0V...HN51D</p>
-            </Button>
+            <AuthButton />
           </div>
         </div>
       </div>
