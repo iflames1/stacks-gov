@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiSearch } from "react-icons/fi";
 import { IoNotifications } from "react-icons/io5";
+import AuthButton from "./auth-button";
 
 export default function Top() {
   return (
@@ -30,7 +31,7 @@ export default function Top() {
             <button className="p-3 bg-white/5 rounded-full">
               <IoNotifications className="size-6 text-white/[0.4]" />
             </button>
-            <button className="flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5">
+            {/*<button className="flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5">
               <Image
                 src={"/images/wallet-icon.png"}
                 alt="avater"
@@ -39,7 +40,8 @@ export default function Top() {
                 className="rounded-full size-[23px]"
               />
               <p className="text-base font-normal">SPF0V...HN51D</p>
-            </button>
+            </button>*/}
+            <AuthButton />
           </div>
         </div>
       </div>
