@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoNotifications } from "react-icons/io5";
 import AuthButton from "./auth-button";
+import Search from "./search";
+import MobileTop from "./mobile-top";
+import Button from "../common/button";
 
 export default function Top() {
   return (
@@ -33,7 +36,7 @@ export default function Top() {
           <div className="flex items-center gap-6">
             <Button className="p-3 bg-white/5 rounded-full">
               <IoNotifications className="size-6 text-white/[0.4]" />
-            </button>
+            </Button>
             {/*<button className="flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5">
               <Image
                 src={"/images/wallet-icon.png"}

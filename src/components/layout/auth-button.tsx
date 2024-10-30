@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const formatWalletAddress = (address: string): string => {
   if (address.length <= 13) return address;
-  return `${address.slice(0, 6)}...${address.slice(-4)}`;
+  return `${address.slice(0, 5)}...${address.slice(-5)}`;
 };
 
 export default function AuthButton() {
@@ -35,7 +35,7 @@ export default function AuthButton() {
             className="rounded-full size-[23px]"
           />
           <p className="text-base font-normal">
-            ${formatWalletAddress(walletAddress)}
+            {formatWalletAddress(walletAddress)}
           </p>
         </button>
       ) : (
