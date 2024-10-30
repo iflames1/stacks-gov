@@ -3,8 +3,20 @@ import Link from "next/link";
 import { IoNotifications } from "react-icons/io5";
 import AuthButton from "./auth-button";
 import Search from "./search";
-import MobileTop from "./mobile-top";
 import Button from "../common/button";
+import dynamic from "next/dynamic";
+import { Skeleton } from "../ui/skeleton";
+
+const MobileTop = dynamic(() => import("./mobile-top"), {
+  ssr: false,
+  loading: () => (
+    <div className="xl:hidden pr-2 py-2">
+      <Button className="px-4 py-3">
+        <Skeleton className="size-4" />
+      </Button>
+    </div>
+  ),
+});
 
 export default function Top() {
   return (
@@ -37,16 +49,6 @@ export default function Top() {
             <Button className="p-3 bg-white/5 rounded-full">
               <IoNotifications className="size-6 text-white/[0.4]" />
             </Button>
-            {/*<button className="flex items-center gap-3 px-4 py-3 border border-white/[0.02] rounded-sm bg-white/5">
-              <Image
-                src={"/images/wallet-icon.png"}
-                alt="avater"
-                width={23}
-                height={23}
-                className="rounded-full size-[23px]"
-              />
-              <p className="text-base font-normal">SPF0V...HN51D</p>
-            </button>*/}
             <AuthButton />
           </div>
         </div>
