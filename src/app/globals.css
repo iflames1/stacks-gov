@@ -29,6 +29,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
+    --header-height: 58px;
   }
 
   .dark {
@@ -46,11 +47,11 @@
     --card-foreground: 0 0% 100%;
     --popover: 0 0% 2%;
     --popover-foreground: 0 0% 100%;
-    --primary: 0 0% 100%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: hsla(0, 0%, 100%, 0.05); /* rgba(255, 255, 255, 0.05); */
+    --primary-foreground: 0 0% 100%;
     --secondary: 0 0% 5%;
     --secondary-foreground: 0 0% 100%;
-    --muted: 0 0% 2%;
+    --muted: 0 0% 30%;
     --muted-foreground: 215 20.2% 65.1%;
     --accent: 0 0% 2%;
     --accent-foreground: 0 0% 100%;
@@ -64,6 +65,12 @@
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
+  }
+
+  @media (min-width: 1280px) {
+    :root {
+      --header-height: 106.59px;
+    }
   }
 }
 
